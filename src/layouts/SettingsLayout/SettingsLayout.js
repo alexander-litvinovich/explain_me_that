@@ -24,7 +24,7 @@ const SettingsLayout = ({
   dictionariesList,
 
   returnToMenu,
-  killCache
+  killCache,
 }) => {
   return (
     <div className="SettingsLayout">
@@ -77,34 +77,34 @@ const SettingsLayout = ({
       <div className="SettingsLayout-block">
         <label className="SettingsLayout-label">dictionaries:</label>
         <div className="DictsSelector">
-        <div className="DictsSelector-wrapper">
-          {isDictListLoaded ? (
-            <>
-              {Object.keys(dictionariesList).map(dict => (
-                <div className="DictsSelector-dict">
-                  <Checkbox
-                    label={dictionariesList[dict].title}
-                    value={dict}
-                    onWhenChange={onSelectDicts(dict)}
-                    checked={dicts[dict]}
-                  />
-                </div>
-              ))}
-            </>
-          ) : (
+          <div className="DictsSelector-wrapper">
+            {isDictListLoaded ? (
+              <>
+                {Object.keys(dictionariesList).map((dict, index) => (
+                  <div className="DictsSelector-dict" key={index+dictionariesList[dict].title}>
+                    <Checkbox
+                      label={dictionariesList[dict].title}
+                      value={dict}
+                      onWhenChange={onSelectDicts(dict)}
+                      checked={dicts[dict]}
+                    />
+                  </div>
+                ))}
+              </>
+            ) : (
               <div className="DictsSelector-preloader">
                 <Icon name="Preloader" />
-                <div className="DictsSelector-preloader-text">Please, be patient while we loading our best words</div>
+                <div className="DictsSelector-preloader-text">
+                  Please, be patient while we loading our best words
+                </div>
               </div>
-          )}
-            </div>
+            )}
+          </div>
         </div>
       </div>
 
       <div className="SettingsLayout-block">
-        <label className="SettingsLayout-layout">
-          for debugging purposes:
-        </label>
+        <label className="SettingsLayout-layout">for debugging purposes:</label>
         <Button color="red" title="Clean, refetch" {...killCache} />
       </div>
 

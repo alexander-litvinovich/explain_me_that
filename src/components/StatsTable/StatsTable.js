@@ -6,20 +6,19 @@ import Icon from "components/Icon";
 import "./StatsTable.css";
 
 const SlatsTableLine = ({
-  timeTrial,
+  gameMode,
   right,
   wrong,
   time,
   skipped,
-  timeStamp,
   efficiency,
   bestScore = false
 }) => {
 
   return (
-    <tr key={timeStamp} className="StatsTable-Line">
+    <tr className="StatsTable-Line">
       <td>
-        {timeTrial ? "Time attack" : "Card set"}
+        {gameMode ? "Time attack" : "Card set"}
         {bestScore && (
           <span className="StatsTable-bestScore">
             <Icon name="Highlight" />
@@ -64,8 +63,8 @@ const StatsTable = ({ stats, faded }) => {
           </tr>
         </thead>
         <tbody>
-          {stats.map(round => (
-            <SlatsTableLine {...round} />
+          {stats.map((round, index) => (
+            <SlatsTableLine key={index} {...round} />
           ))}
         </tbody>
       </table>

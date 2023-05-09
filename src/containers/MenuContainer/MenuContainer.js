@@ -6,17 +6,17 @@ import { secToTimeString } from "utils/Helpers.js";
 const MenuContainer = () => {
   const settings = GameStore.loadSettings();
   const lastRound = GameStore.loadStats().slice(0, 1)[0] || null;
-
   const gameModeLabels = {
     true: "Time Attack",
-    false: "Card Set"
+    false: "Card Set",
   };
 
   const timeLimitLabels = {
+    3: "3 sec",
     30: "Half of minute",
     60: "1 minute",
     180: "3 minutes",
-    300: "5 minutes"
+    300: "5 minutes",
   };
 
   let gameSubTitle = `${

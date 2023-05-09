@@ -1,40 +1,42 @@
-import React, { Component } from "react";
+import React from "react";
 import GameStore from "utils/GameStore.js";
 
 import StatisticsLayout from "layouts/StatisticsLayout";
 
-class StatisticsContainer extends Component {
-  constructor(props) {
-    super(props);
-    let rounds = GameStore.loadStats();
-    const lastRound = rounds.shift();
-    if (props.roundEnd) rounds = rounds.slice(0, 5);
-    this.state = {
-      rounds: rounds,
-      lastRound: lastRound,
-      roundEnd: props.roundEnd
-    };
-  }
+const NUMBER_OF_STAT_ROWS_TO_SHOW = 5;
 
-  clearStats = () => {
+const StatisticsContainer = ({ roundEnd }) => {
+  const [isStatsLoaded, setIsStatsLoaded] = React.useState(false);
+  const [rounds, setRounds] = React.useState([]);
+  const [lastRound, setLastRound] = React.useState(false);
+
+  const clearStats = () => {
     GameStore.clearStats();
-    this.setState({ rounds: [] });
+    setRounds([]);
+    setLastRound(false);
   };
 
-  render() {
-    const { lastRound, rounds, roundEnd } = this.state;
+  React.useEffect(() => {
+    const rounds = GameStore.loadStats().slice(0, NUMBER_OF_STAT_ROWS_TO_SHOW);
+
+    setLastRound(rounds.shift());
+    setRounds(rounds);
+    setIsStatsLoaded(true);
+  }, []);
+
+  if (isStatsLoaded)
     return (
       <StatisticsLayout
         roundEnd={roundEnd}
         lastRound={lastRound}
         rounds={rounds}
-        clearStats={{ onClick: this.clearStats }}
+        clearStats={{ onClick: clearStats }}
         returnToMenu={{ link: "/Menu" }}
         nextRoundButton={{ link: "/Game" }}
         goToStats={{ link: "/Statistics" }}
       />
     );
-  }
-}
+  else return <>Loading stats</>;
+};
 
 export default StatisticsContainer;

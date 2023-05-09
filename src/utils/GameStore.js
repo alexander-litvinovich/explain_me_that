@@ -1,4 +1,4 @@
-import { roundEfficiency } from "utils/Helpers.js";
+import { roundEfficiency, isDevelopment } from "utils/Helpers.js";
 
 const MAX_STATS_COUNT = 20;
 const GAME_SETTINGS = "gameSettings";
@@ -17,13 +17,13 @@ export default class GameStore {
   };
 
   static saveSettings = function(newSettings) {
-    console.log(newSettings);
+    isDevelopment() && console.log("Saving settings: ", newSettings);
 
     localStorage.setItem(GAME_SETTINGS, JSON.stringify(newSettings));
   };
 
   static saveDicts = function(newDicts) {
-    console.log(newDicts);
+    isDevelopment() && console.log("Saving dicts: ", newDicts);
 
     localStorage.setItem(GAME_SELECTED_DICTS, JSON.stringify(newDicts));
   };
@@ -45,7 +45,7 @@ export default class GameStore {
       });
       stats[bestScore.index].bestScore = true;
     }
-    console.log("loading stats", stats);
+    isDevelopment() && console.log('%c Statistics loaded ', 'background: #222; color: #bada55');
 
     return stats;
   };

@@ -1,68 +1,217 @@
-import React, { Component } from "react";
+import React from "react";
 import GameLayout from "layouts/GameLayout";
-import { withRouter } from "react-router-dom";
-import GameStore from "utils/GameStore.js";
+import GameStore from "utils/GameStore";
 import Dictionary from "utils/Dictionary";
+import { isDevelopment } from "utils/Helpers";
+import { useNavigate } from "react-router-dom";
 
-const initialState = (isFreePlay = false, keepScore = false) => {
-  let init = {
-    cardsQueue: [],
-    timerID: null
-  };
+let timerID;
 
-  init.settings = GameStore.loadSettings();
-  if (!keepScore) {
-    init.score = {
-      right: 0,
-      wrong: 0,
-      skipped: 0,
-      time: 0,
+let settings = {};
 
-      timeDisplay: init.settings.gameMode ? init.settings.timeLimit : 0,
-      currentCard: 1
-    };
-  }
-  init.gameState = {
-    isGameStarted: false,
-    isFreePlay: isFreePlay,
-    isPaused: false,
-    isMenuOpened: false,
-    isRestartDialogOpened: false
-  };
-
-  return init;
+const initScore = {
+  right: 0,
+  wrong: 0,
+  skipped: 0,
+  currentCard: 1,
 };
 
-class GameContainer extends Component {
-  //Will be functions to force swipe at react-swipy
-  forceSwipeLeft;
-  forceSwipeRight;
+const initGameState = {
+  isGameStarted: false,
+  isPaused: false,
+  isMenuOpened: false,
+  isRestartDialogOpened: false,
+};
 
-  outerData;
+let time = 0;
 
-  constructor(props) {
-    super(props);
+let loadedDicts;
 
-    const { isFreePlay } = props;
-    this.state = initialState(isFreePlay);
+function GameContainer({ isFreePlay }) {
+  const navigate = useNavigate();
 
-    console.log(this.state);
+  const [timeDisplay, setTimeDisplay] = React.useState(
+    settings.gameMode ? settings.timeLimit : 0
+  );
+  const [isDictLoaded, setIsDictLoaded] = React.useState(false);
+  const [score, setScore] = React.useState(initScore);
+  const [cardsQueue, setCardsQueue] = React.useState([]);
+  const [gameState, setGameState] = React.useState({
+    isFreePlay,
+    ...initGameState,
+  });
+
+  const timeDisplayRef = React.useRef(timeDisplay);
+  timeDisplayRef.current = timeDisplay;
+
+  React.useEffect(() => {
+    isDevelopment() && console.log("--- CDM ---");
+    time = 0;
+    (async function fetchData() {
+      settings = GameStore.loadSettings();
+      loadedDicts = await loadDicts(GameStore.loadDicts());
+      setIsDictLoaded(true);
+      resetCards();
+    })();
+    return () => {
+      isDevelopment() && console.log("--- CWU ---");
+      window.clearInterval(timerID);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    if (cardsQueue?.length === 0 && gameState.isGameStarted) {
+      if (gameState.isFreePlay) resetCards(true);
+      else roundEnd();
+    }
+  }, [cardsQueue.length]);
+
+  React.useEffect(() => {
+    if (settings.gameMode && time === settings.timeLimit + 1) roundEnd();
+  }, [time]);
+
+  function resetCards(keepScore = false) {
+    setGameState({
+      isFreePlay,
+      ...initGameState,
+    });
+
+    if (!keepScore) {
+      setScore(initScore);
+      setTimeDisplay(settings.gameMode ? settings.timeLimit : 0);
+      time = 0;
+    }
+
+    let cards = [...loadedDicts].sort(() => Math.random() - 0.5);
+    if (settings.gameMode === false) cards = cards.splice(0, settings.cardSet);
+    if (!isFreePlay) cards.push({ isCardBack: true });
+    setCardsQueue(cards);
+
+    isDevelopment() && console.log("ON RESET: ", gameState, score);
   }
 
-  componentWillUnmount() {
-    const { timerID } = this.state;
-    clearInterval(timerID);
+  const onRestart = () => {
+    window.clearInterval(timerID);
+    resetCards();
+  };
+
+  function roundEnd() {
+    const roundStat = {
+      ...settings,
+      ...score,
+      time,
+      timeDisplay: timeDisplayRef.current,
+      timeStamp: Date.now(),
+    };
+
+    isDevelopment() && console.log("Round!", roundStat);
+
+    window.clearInterval(timerID);
+    GameStore.pushStats(roundStat);
+    navToRoundEnd();
   }
 
-  async componentDidMount() {
-    this.outerData = await this.loadDicts(GameStore.loadDicts());
-    this.resetCards();
+  const tick = () => {
+    isDevelopment() && console.log("Tick " + time);
+
+    time++;
+    setTimeDisplay(settings.gameMode ? settings.timeLimit - time : time);
+  };
+
+  function setPause(paused) {
+    if (paused === true) window.clearInterval(timerID);
+    else {
+      timerID = window.setInterval(tick, 1000);
+      isDevelopment() && console.log("TimerID:", timerID);
+    }
+
+    setGameState((prev) => ({ ...prev, isPaused: paused }));
+
+    isDevelopment() && console.log(`PAUSED ${gameState.isPaused}`);
   }
 
-  async loadDicts(filter) {
+  const onStart = () => {
+    let newCardsQueue = cardsQueue;
+    newCardsQueue.pop();
+
+    setCardsQueue(newCardsQueue);
+    setGameState({ ...gameState, isGameStarted: true });
+    setPause(false);
+  };
+
+  const onHit = () => {
+    isDevelopment() && console.log("Hit");
+    setScore((prev) => {
+      let newCardsQueue = cardsQueue;
+      newCardsQueue.pop();
+      setCardsQueue(newCardsQueue);
+
+      return {
+        ...prev,
+        right: prev.right + 1,
+        currentCard: prev.currentCard + 1,
+      };
+    });
+  };
+
+  const onBuzz = () => {
+    isDevelopment() && console.log("Buzz");
+    setScore((prev) => {
+      let newCardsQueue = cardsQueue;
+      newCardsQueue.pop();
+      setCardsQueue(newCardsQueue);
+
+      return {
+        ...prev,
+        wrong: prev.wrong + 1,
+        currentCard: prev.currentCard + 1,
+      };
+    });
+  };
+
+  const onSkip = () => {
+    let newCardsQueue = cardsQueue;
+
+    newCardsQueue.unshift(newCardsQueue.pop());
+    setCardsQueue(newCardsQueue);
+
+    if (cardsQueue.length > 1) {
+      setScore((prev) => {
+        return {
+          ...prev,
+          skipped: prev.skipped + 1,
+        };
+      });
+    }
+  };
+
+  const onModalWindowOpened = (opened, kind) => () => {
+    const newGameState = { ...gameState };
+    setPause(opened);
+    switch (kind) {
+      case "menu":
+        newGameState.isMenuOpened = opened;
+        break;
+
+      case "restart":
+        newGameState.isRestartDialogOpened = opened;
+        break;
+
+      default:
+        break;
+    }
+
+    setGameState(newGameState);
+  };
+
+  function navToRoundEnd() {
+    navigate("/RoundEnd");
+  }
+
+  async function loadDicts(filter) {
     try {
       const dictList = await Dictionary.list();
-      console.log("PLIST: ", dictList);
+
       try {
         const dicts = await Promise.all(
           Object.keys(dictList).reduce(
@@ -71,253 +220,77 @@ class GameContainer extends Component {
           )
         );
 
-        console.log("PARRDICTS: ", dicts);
-
         let dictFallback = !Object.keys(filter).reduce(
           (prev, cur) => prev || filter[cur],
           false
         );
 
         const result = Object.keys(dictList).reduce(
-          (
-            prev,
-            dictId,
-            index
-          ) =>
+          (prev, dictId, index) =>
             filter[dictId] || dictFallback
               ? [...prev, ...dicts[index]]
               : [...prev],
           []
         );
 
-        console.log("PDICTS: ", result);
-
-        this.setState({ isDictLoaded: true });
         return result;
       } catch {
-        console.error("Error loading dictionaries");
+        isDevelopment() && console.error("Error loading dictionaries");
       }
     } catch {
-      console.error("Error loading list");
+      isDevelopment() && console.error("Error loading list");
     }
   }
 
-  render() {
-    const { settings, score, gameState, cardsQueue, isDictLoaded } = this.state;
-
-    return (
-      <GameLayout
-        onAnswer={this.onAnswer}
-        onSkip={this.onSkip}
-        onStart={this.onStart}
-        headerAction={{
-          menu: {
-            onClick: this.onModalWindowOpened(true, "menu")
-          },
-          restart: {
-            onClick: this.onModalWindowOpened(true, "restart")
-          },
-          back: {
-            link: "/Menu"
-          }
-        }}
-        onMenuActions={{
-          overlay: {
-            onClose: this.onModalWindowOpened(false, "menu")
-          },
-          restart: {
-            onClick: this.onRestart
-          },
-          goToMenu: {
-            link: "/Menu"
-          },
-          resume: {
-            onClick: this.onModalWindowOpened(false, "menu")
-          }
-        }}
-        onRestartDialogActions={{
-          overlay: {
-            onClose: this.onModalWindowOpened(false, "restart")
-          },
-          restart: {
-            onClick: this.onRestart
-          },
-          resume: {
-            onClick: this.onModalWindowOpened(false, "restart")
-          }
-        }}
-        settings={settings}
-        score={score}
-        gameState={gameState}
-        cardsQueue={cardsQueue}
-        setForceSwipe={this.setForceSwipe}
-        isDictLoaded={isDictLoaded}
-      />
-    );
-  }
-
-  setForceSwipe = (func, toRight) => {
-    if (toRight) this.forceSwipeRight = func;
-    else this.forceSwipeLeft = func;
-  };
-
-  onRestart = () => {
-    const { timerID } = this.state;
-    clearInterval(timerID);
-    this.resetCards();
-  };
-
-  resetCards = (keepScore = false) => {
-    const { isFreePlay } = this.props;
-
-    this.setState(initialState(isFreePlay, keepScore), () => {
-      const { settings, gameState } = this.state;
-
-      let cards = [...this.outerData];
-
-      cards.sort(() => Math.random() - 0.5);
-
-      if (settings.gameMode === false) {
-        cards = cards.splice(0, settings.cardSet);
-      }
-
-      if (!gameState.isFreePlay) cards.push({ isCardBack: true });
-
-      this.setState({ cardsQueue: cards });
-
-      console.log("ON RESET: ", this.state);
-    });
-  };
-
-  tick = () => {
-    let { settings, score } = this.state;
-
-    if (settings.gameMode && score.time === settings.timeLimit) this.roundEnd();
-
-    this.setState(state => {
-      const { score, settings } = state;
-      score.time += 1;
-      score.timeDisplay = settings.gameMode
-        ? settings.timeLimit - score.time
-        : score.time;
-      return { score: score };
-    });
-  };
-
-  roundEnd = () => {
-    const { settings, score, timerID } = this.state;
-
-    clearInterval(timerID);
-
-    let roundStat = {
-      timeStamp: Date.now(),
-      gameMode: settings.gameMode,
-      timeLimit: settings.timeLimit,
-
-      time: score.time,
-      right: score.right,
-      wrong: score.wrong,
-      skipped: score.skipped
-    };
-
-    GameStore.pushStats(roundStat);
-
-    this.navToRoundEnd(this.props);
-  };
-
-  onModalWindowOpened = (opened, kind) => () => {
-    const { gameState } = this.state;
-
-    switch (kind) {
-      case "menu":
-        gameState.isMenuOpened = opened;
-        break;
-
-      case "restart":
-        gameState.isRestartDialogOpened = opened;
-        break;
-
-      default:
-        break;
-    }
-
-    this.setState({ gameState: gameState }, () => {
-      if (gameState.isGameStarted) this.setPause(opened);
-    });
-  };
-
-  setPause = paused => {
-    let { gameState, timerID } = this.state;
-
-    if (paused === true) {
-      clearInterval(timerID);
-    } else {
-      timerID = window.setInterval(this.tick, 1000);
-    }
-
-    gameState.isPaused = paused;
-
-    console.log(`PAUSED ${gameState.isPaused}`);
-
-    this.setState({ gameState: gameState, timerID: timerID });
-  };
-
-  onStart = (forceSwipe = false) => () => {
-    if (forceSwipe) return this.forceSwipeRight();
-
-    const { gameState, cardsQueue } = this.state;
-
-    cardsQueue.pop();
-    gameState.isGameStarted = true;
-
-    this.setState({ cardsQueue: cardsQueue, gameState: gameState }, () => {
-      if (cardsQueue.length === 0) this.roundEnd();
-      this.setPause(false);
-    });
-  };
-
-  onAnswer = (isRight, forceSwipe = false) => () => {
-    if (forceSwipe) return this.forceSwipeRight();
-
-    const { score, gameState, cardsQueue } = this.state;
-
-    cardsQueue.pop();
-
-    if (isRight) {
-      score.right += 1;
-    } else {
-      score.wrong += 1;
-    }
-
-    score.currentCard += 1;
-
-    this.setState({ cardsQueue: cardsQueue, score: score }, () => {
-      if (cardsQueue.length === 0) {
-        if (gameState.isFreePlay) {
-          this.resetCards(true);
-        } else {
-          this.roundEnd();
-        }
-      }
-    });
-  };
-
-  onSkip = (forceSwipe = false) => () => {
-    if (forceSwipe) return this.forceSwipeLeft();
-
-    const { cardsQueue, score } = this.state;
-
-    if (cardsQueue.length > 1) {
-      cardsQueue.unshift(cardsQueue.pop());
-      score.skipped += 1;
-
-      this.setState({ cardsQueue: cardsQueue, score: score }, () => {
-        if (cardsQueue.length === 0) this.roundEnd();
-      });
-    }
-  };
-
-  navToRoundEnd = ({ history }) => history.push("/RoundEnd");
+  return (
+    <GameLayout
+      onHit={onHit}
+      onBuzz={onBuzz}
+      onSkip={onSkip}
+      onStart={onStart}
+      headerAction={{
+        menu: {
+          onClick: onModalWindowOpened(true, "menu"),
+        },
+        restart: {
+          onClick: onModalWindowOpened(true, "restart"),
+        },
+        back: {
+          link: "/Menu",
+        },
+      }}
+      onMenuActions={{
+        overlay: {
+          onClose: onModalWindowOpened(false, "menu"),
+        },
+        restart: {
+          onClick: onRestart,
+        },
+        goToMenu: {
+          link: "/Menu",
+        },
+        resume: {
+          onClick: onModalWindowOpened(false, "menu"),
+        },
+      }}
+      onRestartDialogActions={{
+        overlay: {
+          onClose: onModalWindowOpened(false, "restart"),
+        },
+        restart: {
+          onClick: onRestart,
+        },
+        resume: {
+          onClick: onModalWindowOpened(false, "restart"),
+        },
+      }}
+      settings={settings}
+      score={{ ...score, time: time, timeDisplay: timeDisplay }}
+      gameState={gameState}
+      cardsQueue={cardsQueue}
+      isDictLoaded={isDictLoaded}
+    />
+  );
 }
 
-export default withRouter(GameContainer);
+export default GameContainer;

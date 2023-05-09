@@ -14,6 +14,8 @@ import Button from "components/Button";
 
 import ModalWindow from "components/ModalWindow";
 
+let forceSwipeLeft, forceSwipeRight;
+
 const renderHeader = ({ settings, gameState, score, headerAction }) => {
   const timeIndicator = gameState.isFreePlay ? null : settings.gameMode ? (
     <Indicator title="time left" value={secToTimeString(score.timeDisplay)} />
@@ -42,8 +44,6 @@ const renderHeader = ({ settings, gameState, score, headerAction }) => {
     </RoundButton>
   );
 
-  console.log("HEADER:", gameState);
-
   return (
     <>
       <Header leftButton={leftButton} rightButton={rightButton} fixed>
@@ -64,25 +64,25 @@ const renderHeader = ({ settings, gameState, score, headerAction }) => {
   );
 };
 
-const renderButtons = ({ onSkip, onAnswer, onStart, gameState }) => {
+const renderButtons = ({ onSkip, onHit, onBuzz, onStart, gameState }) => {
   return (
     <div className="GameLayout-buttons">
       {gameState.isGameStarted || gameState.isFreePlay ? (
         <>
-          <RoundButton color="blue" onClick={onSkip(true)} title="Skip card">
+          <RoundButton color="blue" onClick={forceSwipeLeft} title="Skip card">
             <Icon name="Skip" />
           </RoundButton>
           <RoundButton
             color="red"
             small
-            onClick={onAnswer(false)}
+            onClick={onBuzz}
             title="Taboo word spoken"
           >
             <Icon name="Cross" />
           </RoundButton>
           <RoundButton
             color="green"
-            onClick={onAnswer(true, true)}
+            onClick={forceSwipeRight}
             title="Called right"
           >
             <Icon name="Right" />
@@ -90,11 +90,7 @@ const renderButtons = ({ onSkip, onAnswer, onStart, gameState }) => {
         </>
       ) : (
         <>
-          <RoundButton
-            color="green"
-            onClick={onStart(true)}
-            title="Start the game"
-          >
+          <RoundButton color="green" onClick={onStart} title="Start the game">
             <Icon name="Right" />
           </RoundButton>
         </>
@@ -159,20 +155,22 @@ const renderRestartDialog = ({ gameState, onRestartDialogActions }) => (
   />
 );
 
-const GameLayout = props => {
-  console.log("Game layout: ", props);
-  const {
-    setForceSwipe,
+const setForceSwipe = (func, toRight) => {
+  if (toRight) forceSwipeRight = func;
+  else forceSwipeLeft = func;
+};
 
-    onSkip = () => {},
-    onAnswer = () => {},
-    onStart = () => {},
+const GameLayout = (props) => {
+  const {
+    onSkip,
+    onHit,
+    onStart,
 
     settings,
     score,
     gameState,
 
-    cardsQueue
+    cardsQueue,
   } = props;
 
   const NUMBER_OF_CARDS_TO_SHOW = 4; //4th will be with zero opacity
@@ -181,44 +179,44 @@ const GameLayout = props => {
     <div
       className={classNames("GameLayout", {
         "is-cardSet": !settings.gameMode,
-        "is-freePlay": gameState.isFreePlay
+        "is-freePlay": gameState.isFreePlay,
       })}
     >
       {renderHeader(props)}
       <div className="GameLayout-cardWrapper">
-        {cardsQueue.length > 0 &&
-          cardsQueue
-            .slice(-NUMBER_OF_CARDS_TO_SHOW)
-            .map((card, index, array) => {
-              const {
-                word,
-                image,
-                category,
-                tabooWords,
-                isCardBack,
-                isLoading = false
-              } = card;
-              return (
-                <Card
-                  cardIndex={array.length - index} //1-N, 1 - is upper
-                  onSwipeLeft={onSkip()}
-                  onSwipeRight={onAnswer(true)}
-                  onSwipeStart={onStart()}
-                  key={word + category}
-                  word={word}
-                  image={image}
-                  category={category}
-                  tabooWords={tabooWords}
-                  isCardBack={isCardBack}
-                  isFreePlay={gameState.isFreePlay}
-                  isLoading={isLoading}
-                  gameMode={settings.gameMode}
-                  cardSet={settings.cardSet}
-                  currentCard={score.currentCard}
-                  setForceSwipe={setForceSwipe}
-                />
-              );
-            })}
+        <div className="CW">
+          {cardsQueue.length > 0 &&
+            cardsQueue
+              .slice(-NUMBER_OF_CARDS_TO_SHOW)
+              .map((card, index, array) => {
+                const {
+                  word,
+                  category,
+                  tabooWords,
+                  isCardBack,
+                  isLoading = false,
+                } = card;
+                return (
+                  <Card
+                    key={word + category}
+                    cardIndex={array.length - index} //1-N, 1 - is upper
+                    onSwipeLeft={onSkip}
+                    onSwipeRight={onHit}
+                    onSwipeStart={onStart}
+                    word={word}
+                    category={category}
+                    tabooWords={tabooWords}
+                    isCardBack={isCardBack}
+                    isFreePlay={gameState.isFreePlay}
+                    isLoading={isLoading}
+                    gameMode={settings.gameMode}
+                    cardSet={settings.cardSet}
+                    currentCard={score.currentCard}
+                    setForceSwipe={setForceSwipe}
+                  />
+                );
+              })}
+        </div>
       </div>
       {renderButtons(props)}
       {renderMenu(props)}

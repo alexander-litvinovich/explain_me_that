@@ -2,7 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import "./ModalWindow.css";
 
-const onClickBuffer = func => event => {
+const onClickBuffer = (func) => (event) => {
   event.stopPropagation();
   func();
 };
@@ -12,18 +12,18 @@ const ModalWindow = ({
   title,
   text,
   color,
-  onOpen = () => {},
+  // onOpen = () => {},
   onClose = () => {},
   leftButton,
   rightButton,
-  isOpened
+  isOpened,
 }) => {
   const classes = classNames("ModalWindow-Header", {
     "ModalWindow-Header--colorBlue": color === "blue",
     "ModalWindow-Header--colorGreen": color === "green",
     "ModalWindow-Header--colorRed": color === "red",
     "ModalWindow-Header--colorMagenta": color === "magenta",
-    "ModalWindow-Header--colorBlack": color === "black"
+    "ModalWindow-Header--colorBlack": color === "black",
   });
 
   return (
@@ -34,7 +34,7 @@ const ModalWindow = ({
       >
         <div className="ModalWindow-Content">
           {title ? (
-            <div class={classes}>
+            <div className={classes}>
               <h2>{title}</h2>
               {text ? <p className="ModalWindow-Text">{text}</p> : null}
             </div>
@@ -54,7 +54,7 @@ const ModalWindow = ({
       </div>
       <div
         className={classNames("ModalOverlay", {
-          opened: isOpened
+          opened: isOpened,
         })}
       />
     </>

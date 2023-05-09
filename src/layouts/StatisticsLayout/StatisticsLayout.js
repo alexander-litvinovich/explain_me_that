@@ -32,7 +32,7 @@ const StatisticsLayout = ({
   nextRoundButton,
   returnToMenu,
   goToStats,
-  clearStats
+  clearStats,
 }) => {
   return (
     <div className="StatisticsLayout">

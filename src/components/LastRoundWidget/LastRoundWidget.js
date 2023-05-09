@@ -30,7 +30,7 @@ const LastRoundWidget = ({ stats, style, button }) => {
           value={`${stats.efficiency} hits/min`}
         />
       </div>
-      {button && <div class="LastRoundWidget-fab">{button}</div>}
+      {button && <div className="LastRoundWidget-fab">{button}</div>}
     </div>
   );
 };

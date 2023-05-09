@@ -5,8 +5,9 @@ import "./Radio.css";
 const Radio = ({ onWhenChange, options, name, value, color, size }) => {
   return (
     <div className="Radio">
-      {options.map(option => (
+      {options.map((option, index) => (
         <label
+          key={index}
           tabIndex="0"
           className={classNames("Radio-option", {
             checked: option.value === value,
@@ -15,11 +16,10 @@ const Radio = ({ onWhenChange, options, name, value, color, size }) => {
             "Radio-option--colorRed": color === "red",
             "Radio-option--colorMagenta": color === "magenta",
             "Radio-option--colorBlack": color === "black",
-            "Radio-option--small": size === "small"
+            "Radio-option--small": size === "small",
           })}
         >
           <div className="Radio-option-title">
-            {/* TODO:  console.log(option.value, value)*/}
             <input
               name={name}
               type="radio"

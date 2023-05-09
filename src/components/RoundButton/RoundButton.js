@@ -6,7 +6,7 @@ import "./RoundButton.css";
 const onClickBuffer = (func) => (event) => {
   event.stopPropagation();
   func();
-}
+};
 
 const RoundButton = ({
   name,
@@ -19,7 +19,7 @@ const RoundButton = ({
   onBlur,
   title,
   children,
-  disabled
+  disabled,
 }) => {
   const classes = classNames("RoundButton", {
     "is-disabled": disabled,
@@ -30,7 +30,7 @@ const RoundButton = ({
     "RoundButton--colorRed": color === "red",
     "RoundButton--colorMagenta": color === "magenta",
     "RoundButton--colorBlack": color === "black",
-    "RoundButton--colorWhite": color === "white"
+    "RoundButton--colorWhite": color === "white",
   });
 
   const inner = <div className="RoundButton-child">{children}</div>;

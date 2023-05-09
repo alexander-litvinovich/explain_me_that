@@ -16,7 +16,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .GameLayout-buttons {

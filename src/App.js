@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import SplashContainer from "containers/SplashContainer";
 import MenuContainer from "containers/MenuContainer";
@@ -9,33 +9,31 @@ import SettingsContainer from "containers/SettingsContainer";
 import RulesContainer from "containers/RulesContainer";
 import GameContainer from "containers/GameContainer";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Switch>
-          <Route path="/" exact component={SplashContainer} />
-          <Route
-            path="/Statistics"
-            component={() => <StatisticsContainer roundEnd={false} />}
-          />
-          <Route
-            path="/RoundEnd"
-            component={() => <StatisticsContainer roundEnd={true} />}
-          />
-          <Route path="/Menu" component={MenuContainer} />
-          <Route path="/Rules" component={RulesContainer} />
-          <Route path="/Settings" component={SettingsContainer} />
-          <Route path="/Game" exact component={GameContainer} />
-          <Route
-            path="/Game/Free"
-            exact
-            component={() => <GameContainer isFreePlay={true} />}
-          />
-        </Switch>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" exact element={<SplashContainer />} />
+        <Route
+          path="/Statistics"
+          element={<StatisticsContainer roundEnd={false} />}
+        />
+        <Route
+          path="/RoundEnd"
+          element={<StatisticsContainer roundEnd={true} />}
+        />
+        <Route path="/Menu" element={<MenuContainer />} />
+        <Route path="/Rules" element={<RulesContainer />} />
+        <Route path="/Settings" element={<SettingsContainer />} />
+        <Route path="/Game" exact element={<GameContainer />} />
+        <Route
+          path="/Game/Free"
+          exact
+          element={<GameContainer isFreePlay={true} />}
+        />
+      </Routes>
+    </div>
+  );
+};
 
 export default App;

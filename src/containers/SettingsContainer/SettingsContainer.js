@@ -1,132 +1,132 @@
-import React, { Component } from "react";
-import GameStore from "utils/GameStore.js";
+import React from "react";
+import GameStore from "utils/GameStore";
 import Dictionary from "utils/Dictionary";
-
+import { isDevelopment } from "utils/Helpers";
 import SettingsLayout from "layouts/SettingsLayout";
 
-class SettingsContainer extends Component {
-  gameModeOptions = [
-    {
-      title: "Time attack",
-      value: true
-    },
-    {
-      title: "Cards set",
-      value: false
-    }
-  ];
+const gameModeOptions = [
+  {
+    title: "Time attack",
+    value: true,
+  },
+  {
+    title: "Cards set",
+    value: false,
+  },
+];
 
-  timeLimitOptions = [
-    {
-      title: "Half of minute",
-      value: 30
-    },
-    {
-      title: "1 minute",
-      value: 60
-    },
-    {
-      title: "3 minutes",
-      value: 60 * 3
-    },
-    {
-      title: "5 minutes",
-      value: 60 * 5
-    }
-  ];
+const timeLimitOptions = [
+  isDevelopment() && {
+    title: "3 sec",
+    value: 3,
+  },
+  {
+    title: "Half of minute",
+    value: 30,
+  },
+  {
+    title: "1 minute",
+    value: 60,
+  },
+  {
+    title: "3 minutes",
+    value: 60 * 3,
+  },
+  {
+    title: "5 minutes",
+    value: 60 * 5,
+  },
+];
 
-  async componentDidMount() {
-    const dictList = await Dictionary.list();
-    if (this.dictFallback()) {
-      let fallback = {};
-      Object.keys(dictList).forEach(element => {
-        fallback[element] = true;
-      });
+function SettingsContainer() {
+  const [settings, setSettings] = React.useState({
+    ...GameStore.loadSettings(),
+  });
+  const [dicts, setDicts] = React.useState({ ...GameStore.loadDicts() });
+  const [dictionariesList, setDictionariesList] = React.useState();
+  const [isDictListLoaded, setIsDictListLoaded] = React.useState(false);
 
-      this.setState({ dicts: fallback }, () => {
+  React.useEffect(() => {
+    (async function loadDictsOnEnter() {
+      const dictFallback = () => {
+        return !Object.keys(dicts).reduce(
+          (prev, cur) => prev || dicts[cur],
+          false
+        );
+      };
+
+      const dictList = await Dictionary.list();
+      if (dictFallback()) {
+        let fallback = {};
+        Object.keys(dictList).forEach((element) => {
+          fallback[element] = true;
+        });
+        setDicts({ dicts: fallback });
         GameStore.saveDicts(fallback);
-      });
-    }
+      }
 
-    this.setState({ isDictListLoaded: true, dictionariesList: dictList });
-  }
+      setIsDictListLoaded(true);
+      setDictionariesList(dictList);
+    })();
+  }, []);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      settings: { ...GameStore.loadSettings() },
-      dicts: { ...GameStore.loadDicts() }
-    };
-  }
+  const onChangeSettings = (set) => (value) => () => {
+    isDevelopment() && console.log("Settings updated");
 
-  onChangeSettings = set => value => () => {
-    console.log("SET UPD!");
+    setSettings((prev) => {
+      const updatedSettings = {
+        ...prev,
+        [set]: value,
+      };
 
-    const { settings } = this.state;
-    settings[set] = value;
+      GameStore.saveSettings(updatedSettings);
 
-    console.log("SET UPD: ", settings);
-
-    this.setState({ settings: settings }, () => {
-      GameStore.saveSettings(settings);
+      return updatedSettings;
     });
   };
 
-  onSelectDicts = set => event => {
-    console.log(event.target.checked);
+  const onSelectDicts = (set) => (event) => {
+    setDicts((prev) => {
+      const updatedDicts = { ...prev, [set]: event.target.checked };
 
-    let { dicts } = this.state;
-    dicts[set] = event.target.checked;
+      GameStore.saveDicts(updatedDicts);
 
-    this.setState({ dicts: dicts }, () => {
-      GameStore.saveDicts(dicts);
+      return updatedDicts;
     });
   };
 
-  dictFallback = () => {
-    let { dicts } = this.state;
-
-    return !Object.keys(dicts).reduce((prev, cur) => prev || dicts[cur], false);
-  };
-
-  killCache = async () => {
+  const killCache = async () => {
     GameStore.unsetSettings();
     let dictList;
     try {
       dictList = await Dictionary.list(true);
     } catch (error) {
-      return console.error("Error on fetching dictionaries list", error);
+      return isDevelopment() && console.error("Error on fetching dictionaries list", error);
     }
 
     try {
-      await Object.keys(dictList).forEach(element => {
+      await Object.keys(dictList).forEach((element) => {
         Dictionary.get(element, true);
       });
     } catch (error) {
-      return console.error("Error on fetching dictionaries", error);
+      return isDevelopment() && console.error("Error on fetching dictionaries", error);
     }
   };
 
-
-  render() {
-    const { settings, dicts, dictionariesList, isDictListLoaded } = this.state;
-
-    return (
-      <SettingsLayout
-        gameModeOptions={this.gameModeOptions}
-        timeLimitOptions={this.timeLimitOptions}
-        settings={settings}
-        dicts={dicts}
-        dictionariesList={dictionariesList}
-        onChangeSettings={this.onChangeSettings}
-        onSelectDicts={this.onSelectDicts}
-        isDictListLoaded={isDictListLoaded}
-        dictFallback={this.dictFallback}
-        returnToMenu={{ link: "/Menu" }}
-        killCache={{ onClick: this.killCache }}
-      />
-    );
-  }
+  return (
+    <SettingsLayout
+      gameModeOptions={gameModeOptions}
+      timeLimitOptions={timeLimitOptions}
+      settings={settings}
+      dicts={dicts}
+      dictionariesList={dictionariesList}
+      onChangeSettings={onChangeSettings}
+      onSelectDicts={onSelectDicts}
+      isDictListLoaded={isDictListLoaded}
+      returnToMenu={{ link: "/Menu" }}
+      killCache={{ onClick: killCache }}
+    />
+  );
 }
 
 export default SettingsContainer;

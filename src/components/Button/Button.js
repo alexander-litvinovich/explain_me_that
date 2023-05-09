@@ -6,7 +6,7 @@ import "./Button.css";
 const onClickBuffer = (func) => (event) => {
   event.stopPropagation();
   func();
-}
+};
 
 const Button = ({ title, subTitle = "", link = "", onClick, color, small }) => {
   const classes = classNames("Button", {
@@ -15,7 +15,7 @@ const Button = ({ title, subTitle = "", link = "", onClick, color, small }) => {
     "Button--colorGreen": color === "green",
     "Button--colorRed": color === "red",
     "Button--colorMagenta": color === "magenta",
-    "Button--colorBlack": color === "black"
+    "Button--colorBlack": color === "black",
   });
 
   const inner = (
