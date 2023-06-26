@@ -31,6 +31,7 @@ const App = () => {
           exact
           element={<GameContainer isFreePlay={true} />}
         />
+        <Route path="*" element={<MenuContainer />} />
       </Routes>
     </div>
   );
