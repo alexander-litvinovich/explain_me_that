@@ -19,8 +19,7 @@ const MenuContainer = () => {
     300: "5 minutes",
   };
 
-  let gameSubTitle = `${gameModeLabels[settings.gameMode] ? "Time Attack" : "Card Set"
-    }, ${settings.gameMode
+  let gameSubTitle = `${gameModeLabels[settings.gameMode]}, ${settings.gameMode
       ? timeLimitLabels[settings.timeLimit]
       : settings.cardSet + " cards"
     }`;

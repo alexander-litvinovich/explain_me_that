@@ -2,18 +2,18 @@
   background: transparent;
 }
 
-.Radio{
+.Radio {
   max-width: 450px;
   width: 100%;
   min-width: 280px;
   margin: 0 auto;
 }
 
-.Radio input[type="radio"]{
+.Radio input[type="radio"] {
   display: none;
 }
 
-.Radio-option{
+.Radio-option {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -24,12 +24,22 @@
   border: 0 none;
   align-items: center;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.Radio-option:hover,
+@media (hover: hover) and (pointer: fine) {
+  .Radio-option:hover {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
 .Radio-option:focus {
-  opacity: 0.7;
   outline: none;
+}
+
+.Radio-option:active .Radio-option-title {
+  transform: scale(1.1);
 }
 
 .Radio-option-title {
@@ -38,19 +48,12 @@
   font-size: 36px;
   text-align: center;
   position: relative;
-  margin: auto 5vw;
+  margin: auto 2vw;
   text-transform: uppercase;
-}
 
-.Radio-option-subTitle {
-  position: absolute;
-  top: 40px;
-  opacity: 0.6;
-  font-weight: 500;
-  line-height: 15px;
-  font-size: 11px;
-  width: 100%;
-  text-transform: none;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .Radio-option--colorBlue {

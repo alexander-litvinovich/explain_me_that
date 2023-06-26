@@ -13,9 +13,10 @@
   transition-property: box-shadow;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.RoundButton:focus{
+.RoundButton:focus {
   outline: none;
 }
 
@@ -39,13 +40,20 @@
   transition-timing-function: ease;
 }
 
-.RoundButton:hover .RoundButton-child {
+@media (hover: hover) and (pointer: fine) {
+  .RoundButton:hover .RoundButton-child {
+    transform: scale(1.2);
+  }
+
+  .RoundButton:hover {
+    box-shadow: 0 3px 7px RGBA(0, 0, 0, 0.25);
+  }
+}
+
+.RoundButton:active .RoundButton-child {
   transform: scale(1.2);
 }
 
-.RoundButton:hover {
-  box-shadow: 0 3px 7px RGBA(0, 0, 0, 0.25);
-}
 
 .RoundButton--colorRed {
   background: var(--red);

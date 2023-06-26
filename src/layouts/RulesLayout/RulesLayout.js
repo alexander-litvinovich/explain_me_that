@@ -77,8 +77,8 @@ const RulesLayout = ({ returnToMenu }) => {
           <ul>
             <li>
               Telegram:&nbsp;
-              <a href="https://t.me/litvinovich_alexander">
-                @litvinovich_alexander
+              <a href="https://t.me/alexander_litvinovich">
+                @alexander_litvinovich
               </a>
             </li>
             <li>

@@ -27,11 +27,15 @@ const renderHeader = ({ settings, gameState, score, headerAction }) => {
     <RoundButton {...headerAction.back} small ghost>
       <Icon name="Back" />
     </RoundButton>
-  ) : (
+  ) : (gameState.isGameStarted ? (
     <RoundButton {...headerAction.menu} small ghost>
       <Icon name="Menu" />
     </RoundButton>
-  );
+  ) : (
+    <RoundButton {...headerAction.back} small ghost>
+      <Icon name="Menu" />
+    </RoundButton>
+  ));
 
   const rightButton = gameState.isFreePlay ? null : (
     <RoundButton
@@ -63,8 +67,8 @@ const renderHeader = ({ settings, gameState, score, headerAction }) => {
     </>
   );
 };
-
-const renderButtons = ({ onSkip, onHit, onBuzz, onStart, gameState }) => {
+// ,
+const renderButtons = ({ onBuzz, onStart, gameState }) => {
   return (
     <div className="GameLayout-buttons">
       {gameState.isGameStarted || gameState.isFreePlay ? (
@@ -82,6 +86,7 @@ const renderButtons = ({ onSkip, onHit, onBuzz, onStart, gameState }) => {
           </RoundButton>
           <RoundButton
             color="green"
+            // onClick={onHit}
             onClick={forceSwipeRight}
             title="Called right"
           >

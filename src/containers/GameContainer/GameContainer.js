@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 
 let timerID;
 
+window.timers = 0;
+
 let settings = {};
 
 const initScore = {
@@ -52,6 +54,9 @@ function GameContainer({ isFreePlay }) {
       loadedDicts = await loadDicts(GameStore.loadDicts());
       setIsDictLoaded(true);
       resetCards();
+      if (gameState.isFreePlay) {
+        setPause(false);
+      }
     })();
     return () => {
       isDevelopment() && console.log("--- CWU ---");
@@ -83,10 +88,12 @@ function GameContainer({ isFreePlay }) {
     }
 
     let cards = [...loadedDicts].sort(() => Math.random() - 0.5);
-    if (settings.gameMode === false) cards = cards.splice(0, settings.cardSet);
-    if (!isFreePlay) cards.push({ isCardBack: true });
+    if (!isFreePlay) {
+      if (settings.gameMode === false) cards = cards.splice(0, settings.cardSet);
+      cards.push({ isCardBack: true });
+    }
     setCardsQueue(cards);
-
+    console.log("CARDS", cards);
     isDevelopment() && console.log("ON RESET: ", gameState, score);
   }
 
@@ -119,8 +126,9 @@ function GameContainer({ isFreePlay }) {
   };
 
   function setPause(paused) {
-    if (paused === true) window.clearInterval(timerID);
-    else {
+    window.clearInterval(timerID);
+    if (paused === false) {
+      window.timers++;
       timerID = window.setInterval(tick, 1000);
       isDevelopment() && console.log("TimerID:", timerID);
     }

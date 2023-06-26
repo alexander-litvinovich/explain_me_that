@@ -8,14 +8,21 @@
   text-decoration: none;
   border: 0 none;
   align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.Button:focus{
+.Button:focus {
   outline: none;
 }
 
-.Button:hover{
-  opacity: 0.7;
+@media (hover: hover) and (pointer: fine) {
+  .Button:hover {
+    opacity: 0.7;
+  }
+}
+
+.Button:active .Button-title {
+  transform: scale(1.1);
 }
 
 .Button-title {
@@ -27,6 +34,10 @@
   margin: auto 10vw;
   text-transform: uppercase;
   width: 100%;
+
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .Button-subTitle {

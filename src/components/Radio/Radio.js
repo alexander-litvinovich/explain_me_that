@@ -5,7 +5,7 @@ import "./Radio.css";
 const Radio = ({ onWhenChange, options, name, value, color, size }) => {
   return (
     <div className="Radio">
-      {options.map((option, index) => (
+      {options.map((option, index) => (option.title)&&(
         <label
           key={index}
           tabIndex="0"

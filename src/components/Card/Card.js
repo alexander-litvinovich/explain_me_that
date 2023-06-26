@@ -25,11 +25,11 @@ function Card(props) {
     setForceSwipe,
 
     gameMode,
-    freePlay,
+    isFreePlay,
     cardIndex,
     isCardBack,
     isLoading,
-    
+
     onSwipeStart,
     onSwipeLeft,
     onSwipeRight,
@@ -81,7 +81,7 @@ function Card(props) {
       {!isCardBack && (
         <div className={classNames("Card", `is-layer${cardIndex}`)}>
           <div className="Card_inner">
-            {!gameMode && !freePlay && (
+            {!gameMode && !isFreePlay && (
               <div className="Card_number">
                 {currentCard} of {cardSet}
               </div>

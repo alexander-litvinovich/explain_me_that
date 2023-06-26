@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.NumberInput-input{
+.NumberInput-input {
   min-width: 200px;
   max-width: 70vw;
 }
@@ -39,7 +39,13 @@
   text-transform: uppercase;
 }
 
-.Button:hover,
+@media (hover: hover) and (pointer: fine) {
+  .Button:hover {
+    opacity: 0.7;
+    outline: none;
+  }
+}
+
 .Button:focus {
   opacity: 0.7;
   outline: none;
