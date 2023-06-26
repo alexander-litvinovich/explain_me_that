@@ -8,7 +8,7 @@ The game keeps track of your game time and score and provides statistics from yo
 
 ### TBD:
 - [x] POC (Available here: https://alexander-litvinovich.github.io/)
-- [ ] Prepare bigger dictionary
+- [x] Prepare bigger dictionary
 - [ ] Deploy somewhere
 
 
