@@ -7,7 +7,7 @@ const MenuLayout = ({ game, freePlay, statistics, settings, rules }) => {
   return (
     <div className="MenuLayout">
       <header className="MenuLayout-appName">
-        <Indicator title="game for english learners">
+        <Indicator title="a game for English learners">
           <h1>Explain me that!</h1>
         </Indicator>
       </header>

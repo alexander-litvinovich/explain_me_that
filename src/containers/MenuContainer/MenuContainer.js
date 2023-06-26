@@ -19,19 +19,18 @@ const MenuContainer = () => {
     300: "5 minutes",
   };
 
-  let gameSubTitle = `${
-    gameModeLabels[settings.gameMode] ? "Time Attack" : "Card Set"
-  }, ${
-    settings.gameMode
+  let gameSubTitle = `${gameModeLabels[settings.gameMode] ? "Time Attack" : "Card Set"
+    }, ${settings.gameMode
       ? timeLimitLabels[settings.timeLimit]
       : settings.cardSet + " cards"
-  }`;
+    }`;
 
   let statsSubTitle = !!lastRound
-    ? `${gameModeLabels[lastRound.gameMode]}, ${
-        lastRound.right
-      } hits for ${secToTimeString(lastRound.time)}`
+    ? `${gameModeLabels[lastRound.gameMode]}, ${lastRound.right
+    } hits for ${secToTimeString(lastRound.time)}`
     : "";
+
+  GameStore.firstRun();
 
   return (
     <MenuLayout

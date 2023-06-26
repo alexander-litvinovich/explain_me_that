@@ -1,4 +1,5 @@
 import { roundEfficiency, isDevelopment } from "utils/Helpers.js";
+import Dictionary from "utils/Dictionary";
 
 const MAX_STATS_COUNT = 20;
 const GAME_SETTINGS = "gameSettings";
@@ -6,7 +7,23 @@ const GAME_SELECTED_DICTS = "gameDicts";
 const GAME_STATS = "gameStats";
 
 export default class GameStore {
-  static loadSettings = function() {
+
+  static firstRun = async function () {
+    if (!localStorage.getItem(GAME_SELECTED_DICTS)) {
+
+      const dictList = await Dictionary.list();
+      let fallback = {};
+
+      Object.keys(dictList).forEach((element) => {
+        fallback[element] = true;
+      });
+      console.log('constructor', fallback);
+
+      this.saveDicts(fallback);
+    }
+  }
+
+  static loadSettings = function () {
     const DEFAULT_SETTINGS = {
       gameMode: true,
       timeLimit: 30,
@@ -16,23 +33,23 @@ export default class GameStore {
     return JSON.parse(localStorage.getItem(GAME_SETTINGS)) || DEFAULT_SETTINGS;
   };
 
-  static saveSettings = function(newSettings) {
+  static saveSettings = function (newSettings) {
     isDevelopment() && console.log("Saving settings: ", newSettings);
 
     localStorage.setItem(GAME_SETTINGS, JSON.stringify(newSettings));
   };
 
-  static saveDicts = function(newDicts) {
+  static saveDicts = function (newDicts) {
     isDevelopment() && console.log("Saving dicts: ", newDicts);
 
     localStorage.setItem(GAME_SELECTED_DICTS, JSON.stringify(newDicts));
   };
 
-  static loadDicts = function() {
+  static loadDicts = function () {
     return JSON.parse(localStorage.getItem(GAME_SELECTED_DICTS)) || {};
   };
 
-  static loadStats = function(showBest = true) {
+  static loadStats = function (showBest = true) {
     let stats = JSON.parse(localStorage.getItem(GAME_STATS)) || [];
 
     if (showBest && stats.length > 1) {
@@ -50,7 +67,7 @@ export default class GameStore {
     return stats;
   };
 
-  static pushStats = function({
+  static pushStats = function ({
     gameMode,
     right,
     wrong,
@@ -74,13 +91,13 @@ export default class GameStore {
     localStorage.setItem(GAME_STATS, JSON.stringify(stats));
   };
 
-  static unsetSettings = function() {
+  static unsetSettings = function () {
     localStorage.removeItem(GAME_SETTINGS);
     localStorage.removeItem(GAME_SELECTED_DICTS);
     localStorage.removeItem(GAME_STATS);
   };
 
-  static clearStats = function() {
+  static clearStats = function () {
     localStorage.removeItem(GAME_STATS);
   };
 }

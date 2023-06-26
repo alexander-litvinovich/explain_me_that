@@ -76,15 +76,20 @@ const RulesLayout = ({ returnToMenu }) => {
 
           <ul>
             <li>
-              Telegram:{" "}
+              Telegram:&nbsp;
               <a href="https://t.me/litvinovich_alexander">
                 @litvinovich_alexander
               </a>
             </li>
             <li>
-              Email:{" "}
+              Email:&nbsp;
               <a href="mailto:litvinovich.alexander@gmail.com">
                 litvinovich.alexander@gmail.com
+              </a>
+            </li>
+            <li>🤑&nbsp;
+              <a target="_blank" rel="noreferrer" href="https://www.tinkoff.ru/collectmoney/crowd/litvinovich.aleksandr1/MSNP460627/?short_link=5i40MP7impY&httpMethod=GET">
+                 Donate for hosting and support
               </a>
             </li>
           </ul>

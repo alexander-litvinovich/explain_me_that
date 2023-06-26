@@ -16,7 +16,7 @@ const SplashLayout = ({ onClick }) => (
     <div className="SplashLayout-appTitle">
       <h2 className="SplashLayout-appTitle-word">Explain me&nbsp;that!</h2>
       <label className="SplashLayout-appTitle-description">
-        game for english learners
+        a game for English learners
       </label>
     </div>
   </div>
