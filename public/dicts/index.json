@@ -1,14 +1,24 @@
 {
   "dictionaries": {
-
-    "urbandictionary" : {
-      "title": "101 Popular",
-      "uri": "101popular.json"
+    "beverages": {
+      "title": "Beverages",
+      "uri": "beverages.json"
     },
-    "swears" : {
-      "title": "Swear words 21+",
-      "uri": "swears.json"
+    "sports": {
+      "title": "Sports",
+      "uri": "sports.json"
+    },
+    "clothes": {
+      "title": "Clothes",
+      "uri": "clothes.json"
+    },
+    "professions": {
+      "title": "Professions",
+      "uri": "professions.json"
+    },
+    "wildlife": {
+      "title": "Wildlife",
+      "uri": "wildlife.json"
     }
   }
-
 }

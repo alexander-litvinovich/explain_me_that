@@ -1,0 +1,1291 @@
+{
+    "words": [
+        {
+            "category": "Clothes",
+            "word": "Ankle Boots",
+            "tabooWords": [
+                "Boots",
+                "Short",
+                "Heel",
+                "Booties",
+                "Fall"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Arm Warmers",
+            "tabooWords": [
+                "Warmers",
+                "Sleeves",
+                "Stretch",
+                "Arm",
+                "Winter"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Ascot",
+            "tabooWords": [
+                "Scarf",
+                "Neck",
+                "Tie",
+                "Formal",
+                "Neckwear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Balaclava",
+            "tabooWords": [
+                "Mask",
+                "Winter",
+                "Head",
+                "Ski",
+                "Cold"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Ballet Shoes",
+            "tabooWords": [
+                "Shoes",
+                "Dance",
+                "Flats",
+                "Pointe",
+                "Ballerina"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Bandana",
+            "tabooWords": [
+                "Headband",
+                "Scarf",
+                "Paisley",
+                "Neck",
+                "Cotton"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Baseball Cap",
+            "tabooWords": [
+                "Hat",
+                "Sport",
+                "Brim",
+                "Team",
+                "Visor"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Beanie",
+            "tabooWords": [
+                "Hat",
+                "Winter",
+                "Knit",
+                "Wool",
+                "Warm"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Belt",
+            "tabooWords": [
+                "Waist",
+                "Buckle",
+                "Leather",
+                "Accessory",
+                "Cinch"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Beret",
+            "tabooWords": [
+                "Hat",
+                "Cap",
+                "French",
+                "Wool",
+                "Artist"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Biker Jacket",
+            "tabooWords": [
+                "Jacket",
+                "Motorcycle",
+                "Leather",
+                "Zipper",
+                "Edgy"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Bikini",
+            "tabooWords": [
+                "Swimsuit",
+                "Beachwear",
+                "Two-piece",
+                "Swimwear",
+                "Summer"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Blazer",
+            "tabooWords": [
+                "Jacket",
+                "Suit",
+                "Formal",
+                "Lapel",
+                "Office"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Blouse",
+            "tabooWords": [
+                "Top",
+                "Women",
+                "Button",
+                "Chiffon",
+                "Blazer"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Bodysuit",
+            "tabooWords": [
+                "Leotard",
+                "Dance",
+                "Unitard",
+                "Gymnastics",
+                "Lycra"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Bolero",
+            "tabooWords": [
+                "Jacket",
+                "Shrug",
+                "Crop",
+                "Evening",
+                "Cover"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Boots",
+            "tabooWords": [
+                "Footwear",
+                "Winter",
+                "Ankle",
+                "Leather",
+                "Hiking"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Briefs",
+            "tabooWords": [
+                "Underwear",
+                "Boxers",
+                "Panties",
+                "Lingerie",
+                "Intimate"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Caftan",
+            "tabooWords": [
+                "Robe",
+                "Kaftan",
+                "Loose",
+                "Flowy",
+                "Bohemian"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Camisole",
+            "tabooWords": [
+                "Top",
+                "Cami",
+                "Lingerie",
+                "Strappy",
+                "Sleek"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Cap",
+            "tabooWords": [
+                "Hat",
+                "Baseball",
+                "Brim",
+                "Snapback",
+                "Visor"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Capri Pants",
+            "tabooWords": [
+                "Pants",
+                "Cropped",
+                "Summer",
+                "Calf-Length",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Cardigan",
+            "tabooWords": [
+                "Sweater",
+                "Knit",
+                "Button",
+                "Cozy",
+                "Long"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Chinos",
+            "tabooWords": [
+                "Pants",
+                "Trousers",
+                "Casual",
+                "Khaki",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Clogs",
+            "tabooWords": [
+                "Shoes",
+                "Wooden",
+                "Comfort",
+                "Netherlands",
+                "Traditional"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Coat",
+            "tabooWords": [
+                "Overcoat",
+                "Winter",
+                "Wool",
+                "Long",
+                "Trench"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Corset",
+            "tabooWords": [
+                "Bodice",
+                "Lace",
+                "Waist",
+                "Boning",
+                "Victorian"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Crop Top",
+            "tabooWords": [
+                "Top",
+                "Short",
+                "Midriff",
+                "Summer",
+                "Trendy"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Cropped Pants",
+            "tabooWords": [
+                "Pants",
+                "Capri",
+                "Short",
+                "Ankle",
+                "Trendy"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Cufflinks",
+            "tabooWords": [
+                "Shirt",
+                "Formal",
+                "French",
+                "Sleeve",
+                "Accessories"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Dress",
+            "tabooWords": [
+                "Skirt",
+                "Formal",
+                "Sleeveless",
+                "Gown",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Espadrilles",
+            "tabooWords": [
+                "Shoes",
+                "Sandals",
+                "Summer",
+                "Rope",
+                "Beach"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Flip Flops",
+            "tabooWords": [
+                "Sandals",
+                "Summer",
+                "Beach",
+                "Thong",
+                "Slippers"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Gloves",
+            "tabooWords": [
+                "Mittens",
+                "Winter",
+                "Leather",
+                "Finger",
+                "Knit"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Goggles",
+            "tabooWords": [
+                "Eyewear",
+                "Swimming",
+                "Protection",
+                "Ski",
+                "Safety"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Gown",
+            "tabooWords": [
+                "Dress",
+                "Formal",
+                "Evening",
+                "Ball",
+                "Elegant"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Harem Pants",
+            "tabooWords": [
+                "Pants",
+                "Loose",
+                "Baggy",
+                "Bohemian",
+                "Comfortable"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Hat",
+            "tabooWords": [
+                "Cap",
+                "Headwear",
+                "Brim",
+                "Sun",
+                "Beanie"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Headband",
+            "tabooWords": [
+                "Hair",
+                "Band",
+                "Sweat",
+                "Sports",
+                "Elastic"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "High Heels",
+            "tabooWords": [
+                "Stilettos",
+                "Shoes",
+                "Platform",
+                "Pumps",
+                "Wedges"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Hijab",
+            "tabooWords": [
+                "Headscarf",
+                "Muslim",
+                "Veil",
+                "Cover",
+                "Modest"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Hiking Boots",
+            "tabooWords": [
+                "Boots",
+                "Outdoor",
+                "Trekking",
+                "Trail",
+                "Ankle Support"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Hoodie",
+            "tabooWords": [
+                "Sweatshirt",
+                "Pullover",
+                "Hood",
+                "Fleece",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Jacket",
+            "tabooWords": [
+                "Outerwear",
+                "Zipper",
+                "Hood",
+                "Parka",
+                "Windbreaker"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Jeans",
+            "tabooWords": [
+                "Denim",
+                "Pants",
+                "Blue",
+                "Skinny",
+                "Trousers"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Jumpsuit",
+            "tabooWords": [
+                "Onesie",
+                "Overalls",
+                "Romper",
+                "Playsuit",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Kaftan",
+            "tabooWords": [
+                "Robe",
+                "Tunic",
+                "Beach",
+                "Loose",
+                "Bohemian"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Kilt",
+            "tabooWords": [
+                "Scottish",
+                "Skirt",
+                "Tartan",
+                "Plaid",
+                "Bagpipes"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Kimono",
+            "tabooWords": [
+                "Japanese",
+                "Robe",
+                "Traditional",
+                "Obi",
+                "Geisha"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Leg Warmers",
+            "tabooWords": [
+                "Warm",
+                "Dance",
+                "Exercise",
+                "Ballet",
+                "Knit"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Leggings",
+            "tabooWords": [
+                "Stretch",
+                "Yoga",
+                "Workout",
+                "Spandex",
+                "Elasticated"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Leotard",
+            "tabooWords": [
+                "Bodysuit",
+                "Gymnastics",
+                "Dance",
+                "Unitard",
+                "Ballet"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Maxi Dress",
+            "tabooWords": [
+                "Long",
+                "Gown",
+                "Floor-Length",
+                "Summer",
+                "Bohemian"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Muffler",
+            "tabooWords": [
+                "Scarf",
+                "Neck",
+                "Winter",
+                "Wrap",
+                "Wool"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Onesie",
+            "tabooWords": [
+                "Jumpsuit",
+                "Pajamas",
+                "Sleep",
+                "Comfortable",
+                "Romper"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Overalls",
+            "tabooWords": [
+                "Jumpsuit",
+                "Dungarees",
+                "Denim",
+                "Workwear",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Overcoat",
+            "tabooWords": [
+                "Coat",
+                "Winter",
+                "Long",
+                "Wool",
+                "Formal"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pajama Pants",
+            "tabooWords": [
+                "Pants",
+                "Sleepwear",
+                "Lounge",
+                "Comfortable",
+                "Elastic Waist"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pajamas",
+            "tabooWords": [
+                "Sleepwear",
+                "Nightgown",
+                "Lounge",
+                "Nightwear",
+                "Silk"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pants",
+            "tabooWords": [
+                "Trousers",
+                "Slacks",
+                "Belt",
+                "Pockets",
+                "Denim"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pantyhose",
+            "tabooWords": [
+                "Tights",
+                "Stockings",
+                "Sheer",
+                "Nylon",
+                "Hosiery"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pashmina",
+            "tabooWords": [
+                "Shawl",
+                "Scarf",
+                "Wrap",
+                "Cashmere",
+                "Soft"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Peasant Top",
+            "tabooWords": [
+                "Top",
+                "Blouse",
+                "Boho",
+                "Flowy",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Pencil Skirt",
+            "tabooWords": [
+                "Skirt",
+                "Office",
+                "Formal",
+                "Slim",
+                "Knee-Length"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Peplum Top",
+            "tabooWords": [
+                "Top",
+                "Ruffle",
+                "Waist",
+                "Flare",
+                "Feminine"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Playsuit",
+            "tabooWords": [
+                "Romper",
+                "Jumpsuit",
+                "One-Piece",
+                "Summer",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Polo Shirt",
+            "tabooWords": [
+                "Shirt",
+                "Collar",
+                "Sport",
+                "Golf",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Poncho",
+            "tabooWords": [
+                "Cape",
+                "Shawl",
+                "Fringe",
+                "Boho",
+                "Mexican"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Puffer Jacket",
+            "tabooWords": [
+                "Jacket",
+                "Winter",
+                "Quilted",
+                "Warm",
+                "Outerwear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Rain Boots",
+            "tabooWords": [
+                "Boots",
+                "Waterproof",
+                "Rubber",
+                "Weather",
+                "Outdoor"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Raincoat",
+            "tabooWords": [
+                "Waterproof",
+                "Hood",
+                "Rain",
+                "Jacket",
+                "Rubber"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Rompers",
+            "tabooWords": [
+                "Jumpsuit",
+                "Playsuit",
+                "Baby",
+                "Toddler",
+                "Cute"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sandals",
+            "tabooWords": [
+                "Flip Flops",
+                "Summer",
+                "Strappy",
+                "Beach",
+                "Open-Toe"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Scarf",
+            "tabooWords": [
+                "Wrap",
+                "Neck",
+                "Wool",
+                "Winter",
+                "Knitted"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Scrubs",
+            "tabooWords": [
+                "Uniform",
+                "Medical",
+                "Hospital",
+                "Nurse",
+                "Doctor"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Shirt",
+            "tabooWords": [
+                "Button-down",
+                "Formal",
+                "Collar",
+                "Plaid",
+                "Oxford"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Shorts",
+            "tabooWords": [
+                "Summer",
+                "Bottoms",
+                "Gym",
+                "Beach",
+                "Hot"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Silk Scarf",
+            "tabooWords": [
+                "Scarf",
+                "Neck",
+                "Luxurious",
+                "Soft",
+                "Elegant"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Skates",
+            "tabooWords": [
+                "Ice",
+                "Blades",
+                "Figure",
+                "Rink",
+                "Ice Hockey"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Ski Jacket",
+            "tabooWords": [
+                "Jacket",
+                "Snow",
+                "Winter",
+                "Skiing",
+                "Waterproof"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Ski Pants",
+            "tabooWords": [
+                "Pants",
+                "Snow",
+                "Winter",
+                "Skiing",
+                "Waterproof"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Skirt",
+            "tabooWords": [
+                "Pleated",
+                "Mini",
+                "A-Line",
+                "Midi",
+                "Flared"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Slip Dress",
+            "tabooWords": [
+                "Dress",
+                "Sleek",
+                "Nightgown",
+                "Lingerie",
+                "Silhouette"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Slippers",
+            "tabooWords": [
+                "House",
+                "Indoor",
+                "Comfortable",
+                "Fuzzy",
+                "Cozy"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sneakers",
+            "tabooWords": [
+                "Shoes",
+                "Athletic",
+                "Trainers",
+                "Sports",
+                "Footwear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Snood",
+            "tabooWords": [
+                "Scarf",
+                "Neck",
+                "Winter",
+                "Chunky",
+                "Knitted"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Socks",
+            "tabooWords": [
+                "Foot",
+                "Ankle",
+                "Toe",
+                "Cotton",
+                "Stockings"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sombrero",
+            "tabooWords": [
+                "Hat",
+                "Mexican",
+                "Wide-Brimmed",
+                "Straw",
+                "Fiesta"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Suit",
+            "tabooWords": [
+                "Formal",
+                "Tie",
+                "Jacket",
+                "Pants",
+                "Tailored"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sundress",
+            "tabooWords": [
+                "Dress",
+                "Summer",
+                "Sleeveless",
+                "Floral",
+                "Lightweight"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sunglasses",
+            "tabooWords": [
+                "Eyewear",
+                "UV",
+                "Shades",
+                "Sun",
+                "Eyeglasses"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sweatband",
+            "tabooWords": [
+                "Headband",
+                "Gym",
+                "Exercise",
+                "Absorbent",
+                "Athletic"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sweater",
+            "tabooWords": [
+                "Knit",
+                "Wool",
+                "Pullover",
+                "Cardigan",
+                "Turtleneck"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Sweatpants",
+            "tabooWords": [
+                "Pants",
+                "Joggers",
+                "Comfort",
+                "Lounge",
+                "Elastic Waist"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Swimsuit",
+            "tabooWords": [
+                "Bathing Suit",
+                "Beach",
+                "Pool",
+                "Swim",
+                "Bikini"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "T-Shirt",
+            "tabooWords": [
+                "Cotton",
+                "Collar",
+                "Sleeve",
+                "Graphic",
+                "Neckline"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tank Top",
+            "tabooWords": [
+                "Sleeveless",
+                "Shirt",
+                "Summer",
+                "Camisole",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tennis Shoes",
+            "tabooWords": [
+                "Shoes",
+                "Sneakers",
+                "Sport",
+                "Athletic",
+                "Court"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tennis Skirt",
+            "tabooWords": [
+                "Skirt",
+                "Sport",
+                "Pleated",
+                "Athlete",
+                "Court"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tiara",
+            "tabooWords": [
+                "Crown",
+                "Princess",
+                "Headpiece",
+                "Jeweled",
+                "Pageant"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tie",
+            "tabooWords": [
+                "Necktie",
+                "Formal",
+                "Knot",
+                "Business",
+                "Neckwear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Toga",
+            "tabooWords": [
+                "Robe",
+                "Ancient",
+                "Roman",
+                "Costume",
+                "Party"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tracksuit",
+            "tabooWords": [
+                "Athletic",
+                "Sweatpants",
+                "Jacket",
+                "Training",
+                "Sportswear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Trench",
+            "tabooWords": [
+                "Coat",
+                "Rain",
+                "Belt",
+                "Long",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Trilby",
+            "tabooWords": [
+                "Hat",
+                "Fedora",
+                "Brim",
+                "Style",
+                "Men"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Trunks",
+            "tabooWords": [
+                "Swimwear",
+                "Swim",
+                "Beach",
+                "Speedo",
+                "Pool"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tunic",
+            "tabooWords": [
+                "Top",
+                "Dress",
+                "Flowy",
+                "Bohemian",
+                "Casual"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Turban",
+            "tabooWords": [
+                "Headscarf",
+                "Wrap",
+                "Head",
+                "Sikh",
+                "Headgear"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Turtleneck",
+            "tabooWords": [
+                "Sweater",
+                "Neck",
+                "Winter",
+                "Knit",
+                "Cozy"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Tuxedo",
+            "tabooWords": [
+                "Suit",
+                "Formal",
+                "Black Tie",
+                "Bow Tie",
+                "Jacket"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Underwear",
+            "tabooWords": [
+                "Lingerie",
+                "Briefs",
+                "Boxers",
+                "Panties",
+                "Intimate"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Vest",
+            "tabooWords": [
+                "Waistcoat",
+                "Sleeveless",
+                "Formal",
+                "Suit",
+                "Dress Shirt"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Waistcoat",
+            "tabooWords": [
+                "Vest",
+                "Suit",
+                "Formal",
+                "Button",
+                "Gentlemen"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Wetsuit",
+            "tabooWords": [
+                "Wet",
+                "Neoprene",
+                "Surfing",
+                "Diving",
+                "Water"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Windbreaker",
+            "tabooWords": [
+                "Jacket",
+                "Wind",
+                "Zipper",
+                "Lightweight",
+                "Outdoor"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Wristbands",
+            "tabooWords": [
+                "Bands",
+                "Sweat",
+                "Sports",
+                "Tennis",
+                "Absorbent"
+            ]
+        },
+        {
+            "category": "Clothes",
+            "word": "Wristwatch",
+            "tabooWords": [
+                "Watch",
+                "Time",
+                "Strap",
+                "Timepiece",
+                "Accessory"
+            ]
+        }
+    ]
+}

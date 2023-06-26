@@ -1,0 +1,1093 @@
+{
+    "words": [
+        {
+            "category": "Beverages",
+            "word": "Aperol Spritz",
+            "tabooWords": [
+                "Aperol",
+                "Prosecco",
+                "Soda",
+                "Orange",
+                "Italian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Apple Cider",
+            "tabooWords": [
+                "Fall",
+                "Spiced",
+                "Mulled",
+                "Orchard",
+                "Harvest"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Apple Juice",
+            "tabooWords": [
+                "Fresh",
+                "Sweet",
+                "Apples",
+                "Juice",
+                "Vitamin C"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Aviation",
+            "tabooWords": [
+                "Gin",
+                "Maraschino liqueur",
+                "Crème de violette",
+                "Lemon juice",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Beer",
+            "tabooWords": [
+                "Lager",
+                "Brewery",
+                "Pilsner",
+                "Foam",
+                "Hops"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Bellini",
+            "tabooWords": [
+                "Prosecco",
+                "Peach puree",
+                "Italian",
+                "Brunch",
+                "Sparkling"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Bloody Mary",
+            "tabooWords": [
+                "Vodka",
+                "Tomato juice",
+                "Spicy",
+                "Brunch",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Caipirinha",
+            "tabooWords": [
+                "Cachaça",
+                "Lime",
+                "Sugar",
+                "Brazilian",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cappuccino",
+            "tabooWords": [
+                "Frothy",
+                "Espresso",
+                "Steamed milk",
+                "Foam",
+                "Italian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Chai Tea",
+            "tabooWords": [
+                "Spiced",
+                "Milk",
+                "Cardamom",
+                "Indian",
+                "Masala"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Champagne",
+            "tabooWords": [
+                "Bubbly",
+                "Celebration",
+                "Toast",
+                "Sparkling",
+                "Flute"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Chocolate Milk",
+            "tabooWords": [
+                "Creamy",
+                "Sweet",
+                "Cocoa",
+                "Calcium",
+                "Chilled"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cider",
+            "tabooWords": [
+                "Fermented",
+                "Apple",
+                "Crisp",
+                "Mulled",
+                "Autumn"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cocktails",
+            "tabooWords": [
+                "Mixologist",
+                "Shaker",
+                "Martini",
+                "Garnish",
+                "Bartender"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Coconut Milk",
+            "tabooWords": [
+                "Creamy",
+                "Dairy-free",
+                "Tropical",
+                "Vegan",
+                "Smoothie"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Coconut Water",
+            "tabooWords": [
+                "Hydrating",
+                "Tropical",
+                "Refreshing",
+                "Nutrients",
+                "Natural"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Coffee",
+            "tabooWords": [
+                "Caffeine",
+                "Espresso",
+                "Latte",
+                "Bean",
+                "Wake-up"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cosmopolitan",
+            "tabooWords": [
+                "Vodka",
+                "Cranberry juice",
+                "Lime",
+                "Citrus",
+                "Martini"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cranberry Juice",
+            "tabooWords": [
+                "Tart",
+                "Berry",
+                "Cocktail",
+                "Antioxidants",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Cuba Libre",
+            "tabooWords": [
+                "Rum",
+                "Cola",
+                "Lime",
+                "Cocktail",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Daiquiri",
+            "tabooWords": [
+                "Rum",
+                "Lime",
+                "Frozen",
+                "Strawberry",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Dark 'n' Stormy",
+            "tabooWords": [
+                "Dark rum",
+                "Ginger beer",
+                "Lime",
+                "Spiced",
+                "Caribbean"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Earl Grey",
+            "tabooWords": [
+                "Bergamot",
+                "Black tea",
+                "British",
+                "Aromatic",
+                "Citrus"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Eggnog",
+            "tabooWords": [
+                "Creamy",
+                "Holiday",
+                "Nutmeg",
+                "Spiced",
+                "Festive"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Energy Drink",
+            "tabooWords": [
+                "Caffeine",
+                "Boost",
+                "Taurine",
+                "Stamina",
+                "Can"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Espresso",
+            "tabooWords": [
+                "Strong",
+                "Shot",
+                "Crema",
+                "Coffee",
+                "Italian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Frappuccino",
+            "tabooWords": [
+                "Blended",
+                "Coffee",
+                "Cream",
+                "Iced",
+                "Starbucks"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "French 75",
+            "tabooWords": [
+                "Gin",
+                "Champagne",
+                "Lemon juice",
+                "Sugar",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Fruit Punch",
+            "tabooWords": [
+                "Tropical",
+                "Refreshing",
+                "Sweet",
+                "Party",
+                "Bowl"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Fruit Smoothie",
+            "tabooWords": [
+                "Blended",
+                "Healthy",
+                "Banana",
+                "Berries",
+                "Nutritious"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Gimlet",
+            "tabooWords": [
+                "Gin",
+                "Lime",
+                "Sweetened lime juice",
+                "Cocktail",
+                ""
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Gin",
+            "tabooWords": [
+                "Juniper",
+                "Botanicals",
+                "Tonic",
+                "Martini",
+                "British"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Gin and Tonic",
+            "tabooWords": [
+                "Juniper",
+                "Tonic water",
+                "Refreshing",
+                "Citrus",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Green Tea",
+            "tabooWords": [
+                "Matcha",
+                "Leaves",
+                "Antioxidants",
+                "Earthy",
+                "Japanese"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Herbal Tea",
+            "tabooWords": [
+                "Infusion",
+                "Chamomile",
+                "Peppermint",
+                "Relaxing",
+                "Natural"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Chocolate",
+            "tabooWords": [
+                "Cocoa",
+                "Marshmallows",
+                "Winter",
+                "Comfort",
+                "Mug"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Cider",
+            "tabooWords": [
+                "Mulled",
+                "Apple",
+                "Spiced",
+                "Warm",
+                "Autumn"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Cocoa",
+            "tabooWords": [
+                "Warming",
+                "Marshmallows",
+                "Chocolate",
+                "Winter",
+                "Mug"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Lemon Water",
+            "tabooWords": [
+                "Soothing",
+                "Citrus",
+                "Detox",
+                "Warm",
+                "Infusion"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Tea",
+            "tabooWords": [
+                "Steeped",
+                "Infusion",
+                "Herbal",
+                "Chamomile",
+                "Warm"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Hot Toddy",
+            "tabooWords": [
+                "Whiskey",
+                "Honey",
+                "Lemon",
+                "Warm",
+                "Soothing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Iced Coffee",
+            "tabooWords": [
+                "Cold brew",
+                "Milk",
+                "Ice cubes",
+                "Cream",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Iced Lemonade",
+            "tabooWords": [
+                "Cold",
+                "Citrus",
+                "Summer",
+                "Refreshing",
+                "Tart"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Iced Matcha Latte",
+            "tabooWords": [
+                "Green tea",
+                "Milk",
+                "Frothy",
+                "Japanese",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Iced Mocha",
+            "tabooWords": [
+                "Chilled",
+                "Coffee",
+                "Chocolate",
+                "Espresso",
+                "Sweet"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Iced Tea",
+            "tabooWords": [
+                "Chilled",
+                "Summer",
+                "Lemon",
+                "Sweet",
+                "Brewed"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Irish Coffee",
+            "tabooWords": [
+                "Whiskey",
+                "Cream",
+                "Hot",
+                "Irish",
+                "Strong"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Juice",
+            "tabooWords": [
+                "Orange",
+                "Fresh",
+                "Blend",
+                "Citrus",
+                "Pulp"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Kamikaze",
+            "tabooWords": [
+                "Vodka",
+                "Triple sec",
+                "Lime juice",
+                "Shot",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Lager",
+            "tabooWords": [
+                "Pale",
+                "Fermented",
+                "Crisp",
+                "Lagering",
+                "German"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Latte",
+            "tabooWords": [
+                "Espresso",
+                "Milk",
+                "Frothy",
+                "Steamed",
+                "Italian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Lemonade",
+            "tabooWords": [
+                "Tart",
+                "Refreshing",
+                "Citrus",
+                "Summer",
+                "Sweet"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Long Island Iced Tea",
+            "tabooWords": [
+                "Rum",
+                "Vodka",
+                "Tequila",
+                "Citrus",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mai Tai",
+            "tabooWords": [
+                "Rum",
+                "Curacao",
+                "Pineapple",
+                "Tropical",
+                "Tiki"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Margarita",
+            "tabooWords": [
+                "Tequila",
+                "Salt",
+                "Lime",
+                "Frozen",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Martini",
+            "tabooWords": [
+                "Gin",
+                "Vermouth",
+                "Olive",
+                "Shaken",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Matcha Latte",
+            "tabooWords": [
+                "Green tea",
+                "Milk",
+                "Frothy",
+                "Japanese",
+                "Whisked"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mead",
+            "tabooWords": [
+                "Honey",
+                "Fermented",
+                "Medieval",
+                "Sweet",
+                "Ale"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Milk Tea",
+            "tabooWords": [
+                "Boba",
+                "Tapioca",
+                "Sweet",
+                "Creamy",
+                "Taiwanese"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Milkshake",
+            "tabooWords": [
+                "Creamy",
+                "Thick",
+                "Milk",
+                "Whipped cream",
+                "Shake"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mimosa",
+            "tabooWords": [
+                "Champagne",
+                "Orange juice",
+                "Brunch",
+                "Bubbly",
+                "Citrus"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mint Julep",
+            "tabooWords": [
+                "Bourbon",
+                "Mint",
+                "Sugar",
+                "Muddle",
+                "Kentucky Derby"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mocha",
+            "tabooWords": [
+                "Coffee",
+                "Chocolate",
+                "Espresso",
+                "Frothy",
+                "Sweet"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Mojito",
+            "tabooWords": [
+                "Rum",
+                "Mint",
+                "Lime",
+                "Muddle",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Moscow Mule",
+            "tabooWords": [
+                "Vodka",
+                "Ginger beer",
+                "Lime",
+                "Copper mug",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Negroni",
+            "tabooWords": [
+                "Gin",
+                "Campari",
+                "Vermouth",
+                "Bittersweet",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Old Fashioned",
+            "tabooWords": [
+                "Whiskey",
+                "Bitters",
+                "Sugar",
+                "Orange",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Orange Juice",
+            "tabooWords": [
+                "Citrus",
+                "Vitamin C",
+                "Pulp",
+                "Breakfast",
+                "Tangy"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Paloma",
+            "tabooWords": [
+                "Tequila",
+                "Grapefruit",
+                "Lime",
+                "Soda",
+                "Mexican"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Pina Colada",
+            "tabooWords": [
+                "Coconut",
+                "Pineapple",
+                "Cream",
+                "Tropical",
+                "Frozen"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Pisco Sour",
+            "tabooWords": [
+                "Pisco",
+                "Lime",
+                "Simple syrup",
+                "Egg white",
+                "Peruvian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Pomegranate Juice",
+            "tabooWords": [
+                "Antioxidants",
+                "Tart",
+                "Refreshing",
+                "Healthy",
+                "Juicy"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Red Bull",
+            "tabooWords": [
+                "Energy",
+                "Caffeine",
+                "Taurine",
+                "Wings",
+                "Can"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Red Wine",
+            "tabooWords": [
+                "Merlot",
+                "Cabernet Sauvignon",
+                "Grape",
+                "Dry",
+                "Tannins"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Rum",
+            "tabooWords": [
+                "Caribbean",
+                "Distilled",
+                "Sugar cane",
+                "Spiced",
+                "Mojito"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Rum and Coke",
+            "tabooWords": [
+                "Caribbean",
+                "Soda",
+                "Dark rum",
+                "Cuba Libre",
+                "Classic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sake",
+            "tabooWords": [
+                "Rice wine",
+                "Japanese",
+                "Traditional",
+                "Served warm",
+                "Junmai"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sangria",
+            "tabooWords": [
+                "Red wine",
+                "Fruits",
+                "Spanish",
+                "Refreshing",
+                "Pitcher"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sangrita",
+            "tabooWords": [
+                "Tomato",
+                "Orange juice",
+                "Spicy",
+                "Tequila",
+                "Mexican"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sazerac",
+            "tabooWords": [
+                "Rye whiskey",
+                "Absinthe",
+                "Sugar",
+                "Peychaud's bitters",
+                "New Orleans"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Screwdriver",
+            "tabooWords": [
+                "Vodka",
+                "Orange juice",
+                "Citrus",
+                "Brunch",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sex on the Beach",
+            "tabooWords": [
+                "Vodka",
+                "Peach schnapps",
+                "Orange juice",
+                "Cranberry juice",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Shirley Temple",
+            "tabooWords": [
+                "Grenadine",
+                "Lemon-lime soda",
+                "Cherry",
+                "Sweet",
+                "Non-alcoholic"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Singapore Sling",
+            "tabooWords": [
+                "Gin",
+                "Cherry liqueur",
+                "Pineapple juice",
+                "Bitters",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Smoothie",
+            "tabooWords": [
+                "Blended",
+                "Fruit",
+                "Healthy",
+                "Protein",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Soda",
+            "tabooWords": [
+                "Carbonated",
+                "Fizzy",
+                "Pop",
+                "Soft drink",
+                "Cola"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Sparkling Water",
+            "tabooWords": [
+                "Bubbles",
+                "Carbonated",
+                "Effervescent",
+                "Hydration",
+                "Refreshing"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Stout",
+            "tabooWords": [
+                "Dark",
+                "Roasted",
+                "Chocolate",
+                "Bitter",
+                "Guinness"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Tea",
+            "tabooWords": [
+                "Herbal",
+                "Steep",
+                "Green",
+                "Bag",
+                "Earl Grey"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Tequila",
+            "tabooWords": [
+                "Agave",
+                "Shots",
+                "Margarita",
+                "Mexican",
+                "Distilled"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Tequila Sunrise",
+            "tabooWords": [
+                "Tequila",
+                "Orange juice",
+                "Grenadine",
+                "Cocktail",
+                "Sunrise"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Tom Collins",
+            "tabooWords": [
+                "Gin",
+                "Lemon juice",
+                "Simple syrup",
+                "Soda water",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Vodka",
+            "tabooWords": [
+                "Distilled",
+                "Clear",
+                "Shots",
+                "Martini",
+                "Russian"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Water",
+            "tabooWords": [
+                "Hydration",
+                "H2O",
+                "Clear",
+                "Thirst",
+                "Bottled"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Whiskey",
+            "tabooWords": [
+                "Bourbon",
+                "Scotch",
+                "Distilled",
+                "Barrel",
+                "Smoky"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Whiskey Sour",
+            "tabooWords": [
+                "Whiskey",
+                "Lemon",
+                "Simple syrup",
+                "Sour",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "White Russian",
+            "tabooWords": [
+                "Vodka",
+                "Kahlua",
+                "Cream",
+                "Ice",
+                "Cocktail"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Wine",
+            "tabooWords": [
+                "Vineyard",
+                "Cork",
+                "Grapes",
+                "Red",
+                "White"
+            ]
+        },
+        {
+            "category": "Beverages",
+            "word": "Zombie",
+            "tabooWords": [
+                "Rum",
+                "Lime",
+                "Grenadine",
+                "Fruit juice",
+                "Tiki"
+            ]
+        }
+    ]
+}

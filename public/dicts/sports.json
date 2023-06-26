@@ -1,0 +1,488 @@
+{
+    "words": [
+        {
+            "category": "Sports",
+            "word": "Archery",
+            "tabooWords": [
+                "Bow",
+                "Arrow",
+                "Target",
+                "Bullseye",
+                "Quiver"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Athletics",
+            "tabooWords": [
+                "Sprint",
+                "Hurdles",
+                "Long Jump",
+                "Relay",
+                "High Jump"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Badminton",
+            "tabooWords": [
+                "Shuttlecock",
+                "Racquet",
+                "Smash",
+                "Drop Shot",
+                "Net"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Baseball",
+            "tabooWords": [
+                "Bat",
+                "Pitcher",
+                "Home Run",
+                "Inning",
+                "Outfield"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Basketball",
+            "tabooWords": [
+                "Hoop",
+                "Dribble",
+                "Slam Dunk",
+                "Three-Point",
+                "Free Throw"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Biathlon",
+            "tabooWords": [
+                "Ski",
+                "Rifle",
+                "Target",
+                "Shoot",
+                "Cross-Country"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Bowling",
+            "tabooWords": [
+                "Pins",
+                "Ball",
+                "Strike",
+                "Spare",
+                "Lane"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Boxing",
+            "tabooWords": [
+                "Gloves",
+                "Jab",
+                "Knockout",
+                "Ring",
+                "Referee"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Canoeing",
+            "tabooWords": [
+                "Paddle",
+                "Kayak",
+                "Rapids",
+                "River",
+                "Sprint"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Chess",
+            "tabooWords": [
+                "Board",
+                "Pieces",
+                "Checkmate",
+                "Strategy",
+                "Grandmaster"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Climbing",
+            "tabooWords": [
+                "Harness",
+                "Rock",
+                "Belay",
+                "Summit",
+                "Crag"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Cricket",
+            "tabooWords": [
+                "Bat",
+                "Wicket",
+                "Boundary",
+                "Spin",
+                "Yorker"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Curling",
+            "tabooWords": [
+                "Ice",
+                "Stones",
+                "Broom",
+                "Skip",
+                "House"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Cycling",
+            "tabooWords": [
+                "Bicycle",
+                "Pedal",
+                "Race",
+                "Helmet",
+                "Tour de France"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Darts",
+            "tabooWords": [
+                "Dartboard",
+                "Throw",
+                "Bullseye",
+                "Score",
+                "Dart Player"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Fencing",
+            "tabooWords": [
+                "Foil",
+                "Sabre",
+                "Mask",
+                "En Garde",
+                "Parry"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Formula 1",
+            "tabooWords": [
+                "Race",
+                "Car",
+                "Lap",
+                "Pit Stop",
+                "Podium"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Golf",
+            "tabooWords": [
+                "Club",
+                "Tee",
+                "Fairway",
+                "Putt",
+                "Bunker"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Gymnastics",
+            "tabooWords": [
+                "Vault",
+                "Balance Beam",
+                "Floor",
+                "Rings",
+                "Tumbling"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Handball",
+            "tabooWords": [
+                "Court",
+                "Team",
+                "Goal",
+                "Pass",
+                "Penalty Throw"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Horse Racing",
+            "tabooWords": [
+                "Jockey",
+                "Track",
+                "Gallop",
+                "Finish Line",
+                "Stables"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Ice Hockey",
+            "tabooWords": [
+                "Puck",
+                "Stick",
+                "Goalie",
+                "Slap Shot",
+                "Penalty Box"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Ice Skating",
+            "tabooWords": [
+                "Ice",
+                "Blades",
+                "Figure",
+                "Axle",
+                "Skater"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Judo",
+            "tabooWords": [
+                "Martial Arts",
+                "Throw",
+                "Mat",
+                "Gi",
+                "Sensei"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Karate",
+            "tabooWords": [
+                "Martial Arts",
+                "Kick",
+                "Punch",
+                "Belt",
+                "Dojo"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Polo",
+            "tabooWords": [
+                "Horse",
+                "Mallet",
+                "Goal",
+                "Chukker",
+                "Polo Player"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Rugby",
+            "tabooWords": [
+                "Scrum",
+                "Tackle",
+                "Try",
+                "Lineout",
+                "Conversion"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Running",
+            "tabooWords": [
+                "Sprint",
+                "Marathon",
+                "Track",
+                "Finish Line",
+                "Runner"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Sailing",
+            "tabooWords": [
+                "Sail",
+                "Yacht",
+                "Regatta",
+                "Wind",
+                "Captain"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Skateboarding",
+            "tabooWords": [
+                "Skateboard",
+                "Tricks",
+                "Ramp",
+                "Ollie",
+                "Flip"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Skiing",
+            "tabooWords": [
+                "Slopes",
+                "Snow",
+                "Moguls",
+                "Slalom",
+                "Downhill"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Sledding",
+            "tabooWords": [
+                "Sled",
+                "Snow",
+                "Speed",
+                "Toboggan",
+                "Downhill"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Snooker",
+            "tabooWords": [
+                "Cue",
+                "Balls",
+                "Pocket",
+                "Pot",
+                "Chalk"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Snowboarding",
+            "tabooWords": [
+                "Snow",
+                "Halfpipe",
+                "Tricks",
+                "Rail",
+                "Snowboarder"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Soccer",
+            "tabooWords": [
+                "Football",
+                "Goal",
+                "Penalty",
+                "Offside",
+                "Goalkeeper"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Softball",
+            "tabooWords": [
+                "Glove",
+                "Pitch",
+                "Catcher",
+                "Base",
+                "Fastpitch"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Squash",
+            "tabooWords": [
+                "Racquet",
+                "Court",
+                "Serve",
+                "Rally",
+                "Drop Shot"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Surfing",
+            "tabooWords": [
+                "Waves",
+                "Board",
+                "Beach",
+                "Ride",
+                "Surfer"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Swimming",
+            "tabooWords": [
+                "Pool",
+                "Freestyle",
+                "Butterfly",
+                "Backstroke",
+                "Breaststroke"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Table Tennis",
+            "tabooWords": [
+                "Paddle",
+                "Smash",
+                "Spin",
+                "Rally",
+                "Serve"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Tennis",
+            "tabooWords": [
+                "Racket",
+                "Serve",
+                "Volley",
+                "Grand Slam",
+                "Baseline"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Volleyball",
+            "tabooWords": [
+                "Spike",
+                "Block",
+                "Set",
+                "Dig",
+                "Serve"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Weightlifting",
+            "tabooWords": [
+                "Barbell",
+                "Lift",
+                "Power",
+                "Snatch",
+                "Clean and Jerk"
+            ]
+        },
+        {
+            "category": "Sports",
+            "word": "Wrestling",
+            "tabooWords": [
+                "Ring",
+                "Pin",
+                "Submission",
+                "Grapple",
+                "Referee"
+            ]
+        }
+    ]
+}

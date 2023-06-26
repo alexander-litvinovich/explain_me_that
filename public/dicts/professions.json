@@ -1,0 +1,1104 @@
+{
+    "words": [
+        {
+            "category": "Professions",
+            "word": "Accountant",
+            "tabooWords": [
+                "Finance",
+                "Numbers",
+                "Tax",
+                "Audit",
+                "Bookkeeping"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Actor",
+            "tabooWords": [
+                "Acting",
+                "Theater",
+                "Stage",
+                "Role",
+                "Drama"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Aerospace Engineer",
+            "tabooWords": [
+                "Aerospace",
+                "Engineering",
+                "Aircraft",
+                "Aerodynamics",
+                "Avionics"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Animator",
+            "tabooWords": [
+                "Animation",
+                "Cartoon",
+                "Drawing",
+                "Frames",
+                "Motion"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Archaeologist",
+            "tabooWords": [
+                "Excavation",
+                "Artifacts",
+                "Ruins",
+                "History",
+                "Antiquity"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Architect",
+            "tabooWords": [
+                "Design",
+                "Building",
+                "Blueprint",
+                "Construction",
+                "Structure"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Architectural Designer",
+            "tabooWords": [
+                "Design",
+                "Architecture",
+                "Drafting",
+                "Rendering",
+                "Model"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Art Director",
+            "tabooWords": [
+                "Design",
+                "Creativity",
+                "Visual",
+                "Advertising",
+                "Concept"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Artist",
+            "tabooWords": [
+                "Painting",
+                "Creativity",
+                "Canvas",
+                "Sculpture",
+                "Gallery"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Astronaut",
+            "tabooWords": [
+                "Space",
+                "NASA",
+                "Rocket",
+                "Exploration",
+                "Zero gravity"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Astronomer",
+            "tabooWords": [
+                "Astronomy",
+                "Stars",
+                "Universe",
+                "Telescope",
+                "Galaxies"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Athlete",
+            "tabooWords": [
+                "Sports",
+                "Training",
+                "Competition",
+                "Victory",
+                "Stadium"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Barista",
+            "tabooWords": [
+                "Coffee",
+                "Espresso",
+                "Latte",
+                "Cappuccino",
+                "Brew"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Biologist",
+            "tabooWords": [
+                "Biology",
+                "Organisms",
+                "Research",
+                "Microscope",
+                "Genetics"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Biomedical Engineer",
+            "tabooWords": [
+                "Biotechnology",
+                "Medical",
+                "Devices",
+                "Prosthetics",
+                "Research"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Brand Manager",
+            "tabooWords": [
+                "Branding",
+                "Marketing",
+                "Strategy",
+                "Advertising",
+                "Promotion"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Business Analyst",
+            "tabooWords": [
+                "Business",
+                "Analysis",
+                "Requirements",
+                "Strategy",
+                "Data"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Business Development Manager",
+            "tabooWords": [
+                "Business",
+                "Development",
+                "Sales",
+                "Strategy",
+                "Growth"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "CEO",
+            "tabooWords": [
+                "Executive",
+                "Leadership",
+                "Business",
+                "Company",
+                "Management"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Chef",
+            "tabooWords": [
+                "Cooking",
+                "Restaurant",
+                "Recipe",
+                "Cuisine",
+                "Ingredients"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Chiropractor",
+            "tabooWords": [
+                "Spine",
+                "Adjustment",
+                "Back pain",
+                "Manipulation",
+                "Health"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Civil Engineer",
+            "tabooWords": [
+                "Construction",
+                "Infrastructure",
+                "Structures",
+                "Design",
+                "Surveying"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Clinical Psychologist",
+            "tabooWords": [
+                "Psychology",
+                "Therapy",
+                "Mental",
+                "Assessment",
+                "Counseling"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Content Creator",
+            "tabooWords": [
+                "Content",
+                "Social",
+                "Influencer",
+                "YouTube",
+                "Blog"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Content Writer",
+            "tabooWords": [
+                "Writing",
+                "Blog",
+                "Copywriting",
+                "Editing",
+                "Content"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Data Analyst",
+            "tabooWords": [
+                "Data",
+                "Analysis",
+                "Statistics",
+                "Insights",
+                "Spreadsheet"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Data Scientist",
+            "tabooWords": [
+                "Data",
+                "Analytics",
+                "Machine learning",
+                "Algorithms",
+                "Insights"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Dentist",
+            "tabooWords": [
+                "Teeth",
+                "Dental",
+                "Toothache",
+                "Oral",
+                "Cavity"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Dietitian",
+            "tabooWords": [
+                "Nutrition",
+                "Diet",
+                "Healthy",
+                "Food",
+                "Weight"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "DJ",
+            "tabooWords": [
+                "Music",
+                "Turntable",
+                "Remix",
+                "Club",
+                "Beats"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Doctor",
+            "tabooWords": [
+                "Medicine",
+                "Stethoscope",
+                "Hospital",
+                "Surgeon",
+                "Patient"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Economist",
+            "tabooWords": [
+                "Economy",
+                "Finance",
+                "Market",
+                "Analysis",
+                "Stocks"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Electrician",
+            "tabooWords": [
+                "Wires",
+                "Circuit",
+                "Power",
+                "Electrical",
+                "Installation"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Engineer",
+            "tabooWords": [
+                "Design",
+                "Construction",
+                "Innovation",
+                "Blueprint",
+                "Machines"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Entrepreneur",
+            "tabooWords": [
+                "Business",
+                "Start-up",
+                "Innovation",
+                "Venture",
+                "Success"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Environmental Scientist",
+            "tabooWords": [
+                "Environment",
+                "Sustainability",
+                "Conservation",
+                "Ecology",
+                "Research"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Environmentalist",
+            "tabooWords": [
+                "Environment",
+                "Conservation",
+                "Sustainability",
+                "Ecology",
+                "Renewable"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Event Coordinator",
+            "tabooWords": [
+                "Event",
+                "Planning",
+                "Coordination",
+                "Logistics",
+                "Organize"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Event Manager",
+            "tabooWords": [
+                "Event",
+                "Planning",
+                "Coordination",
+                "Execution",
+                "Venue"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Event Planner",
+            "tabooWords": [
+                "Event",
+                "Coordination",
+                "Organize",
+                "Celebration",
+                "Logistics"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Executive Assistant",
+            "tabooWords": [
+                "Assistant",
+                "Organization",
+                "Schedule",
+                "Support",
+                "Manager"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Farmer",
+            "tabooWords": [
+                "Agriculture",
+                "Crops",
+                "Livestock",
+                "Harvest",
+                "Tractor"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Fashion Designer",
+            "tabooWords": [
+                "Clothing",
+                "Runway",
+                "Style",
+                "Fashion",
+                "Sewing"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Fashion Designer",
+            "tabooWords": [
+                "Fashion",
+                "Design",
+                "Runway",
+                "Clothing",
+                "Style"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Fashion Stylist",
+            "tabooWords": [
+                "Style",
+                "Wardrobe",
+                "Fashion",
+                "Trend",
+                "Personal"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Financial Advisor",
+            "tabooWords": [
+                "Finance",
+                "Investment",
+                "Retirement",
+                "Portfolio",
+                "Wealth"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Firefighter",
+            "tabooWords": [
+                "Fire",
+                "Rescue",
+                "Emergency",
+                "Firetruck",
+                "Bravery"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Fitness Trainer",
+            "tabooWords": [
+                "Exercise",
+                "Fitness",
+                "Workout",
+                "Gym",
+                "Health"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Flight Attendant",
+            "tabooWords": [
+                "Airline",
+                "Passengers",
+                "Cabin",
+                "Service",
+                "Announcement"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Florist",
+            "tabooWords": [
+                "Flowers",
+                "Bouquet",
+                "Arrangement",
+                "Floral",
+                "Garden"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Geographer",
+            "tabooWords": [
+                "Geography",
+                "Maps",
+                "Terrain",
+                "Landforms",
+                "Cartography"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Geologist",
+            "tabooWords": [
+                "Rocks",
+                "Minerals",
+                "Earth",
+                "Fossils",
+                "Geological"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Graphic Designer",
+            "tabooWords": [
+                "Design",
+                "Illustrator",
+                "Creative",
+                "Digital",
+                "Branding"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Hairstylist",
+            "tabooWords": [
+                "Hair",
+                "Salon",
+                "Styling",
+                "Cut",
+                "Blow-dry"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "HR Specialist",
+            "tabooWords": [
+                "Human",
+                "Resources",
+                "Hiring",
+                "Employee",
+                "Policies"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Illustrator",
+            "tabooWords": [
+                "Drawing",
+                "Sketch",
+                "Illustration",
+                "Artist",
+                "Color"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Industrial Designer",
+            "tabooWords": [
+                "Product",
+                "Design",
+                "Prototyping",
+                "Manufacturing",
+                "Innovation"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Interior Designer",
+            "tabooWords": [
+                "Design",
+                "Decor",
+                "Space",
+                "Furniture",
+                "Renovation"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "IT Specialist",
+            "tabooWords": [
+                "Information",
+                "Technology",
+                "Support",
+                "Troubleshoot",
+                "Network"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "IT Support Specialist",
+            "tabooWords": [
+                "Information",
+                "Technology",
+                "Troubleshooting",
+                "Helpdesk",
+                "Hardware"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Journalist",
+            "tabooWords": [
+                "News",
+                "Reporting",
+                "Interview",
+                "Article",
+                "Press"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Lawyer",
+            "tabooWords": [
+                "Court",
+                "Advocate",
+                "Legal",
+                "Judge",
+                "Lawsuit"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Librarian",
+            "tabooWords": [
+                "Books",
+                "Library",
+                "Reading",
+                "Quiet",
+                "Catalog"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Life Coach",
+            "tabooWords": [
+                "Coaching",
+                "Personal",
+                "Goals",
+                "Motivation",
+                "Success"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Makeup Artist",
+            "tabooWords": [
+                "Makeup",
+                "Cosmetics",
+                "Beauty",
+                "Brushes",
+                "Glamour"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Marine Biologist",
+            "tabooWords": [
+                "Ocean",
+                "Marine life",
+                "Coral reef",
+                "Aquatic",
+                "Ecosystem"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Market Researcher",
+            "tabooWords": [
+                "Research",
+                "Surveys",
+                "Data",
+                "Analysis",
+                "Consumer"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Marketing Specialist",
+            "tabooWords": [
+                "Marketing",
+                "Advertising",
+                "Strategy",
+                "Branding",
+                "Promotion"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Mechanical Engineer",
+            "tabooWords": [
+                "Mechanical",
+                "Engineering",
+                "Design",
+                "Machines",
+                "Manufacturing"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Meteorologist",
+            "tabooWords": [
+                "Weather",
+                "Forecast",
+                "Climate",
+                "Atmospheric",
+                "Temperature"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Musician",
+            "tabooWords": [
+                "Instrument",
+                "Melody",
+                "Concert",
+                "Band",
+                "Rhythm"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Nurse",
+            "tabooWords": [
+                "Care",
+                "Hospital",
+                "Medical",
+                "Scrubs",
+                "Patient"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Nutritionist",
+            "tabooWords": [
+                "Nutrition",
+                "Diet",
+                "Healthy",
+                "Food",
+                "Wellness"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Paramedic",
+            "tabooWords": [
+                "Ambulance",
+                "Emergency",
+                "Medical",
+                "First aid",
+                "Response"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Personal Assistant",
+            "tabooWords": [
+                "Assistant",
+                "Organization",
+                "Schedule",
+                "Tasks",
+                "Support"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Personal Trainer",
+            "tabooWords": [
+                "Fitness",
+                "Exercise",
+                "Workout",
+                "Fitness goals",
+                "Motivation"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Pharmacist",
+            "tabooWords": [
+                "Medication",
+                "Pharmacy",
+                "Prescription",
+                "Drugs",
+                "Dispense"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Photographer",
+            "tabooWords": [
+                "Camera",
+                "Lens",
+                "Shutter",
+                "Photoshoot",
+                "Photography"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Physicist",
+            "tabooWords": [
+                "Physics",
+                "Quantum",
+                "Theory",
+                "Experiment",
+                "Particles"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Physiotherapist",
+            "tabooWords": [
+                "Therapy",
+                "Rehabilitation",
+                "Injury",
+                "Exercise",
+                "Mobility"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Pilot",
+            "tabooWords": [
+                "Aviation",
+                "Airplane",
+                "Cockpit",
+                "Flight",
+                "Destination"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Police Officer",
+            "tabooWords": [
+                "Law",
+                "Patrol",
+                "Arrest",
+                "Uniform",
+                "Crime"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Product Manager",
+            "tabooWords": [
+                "Product",
+                "Development",
+                "Strategy",
+                "Market",
+                "Launch"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Project Manager",
+            "tabooWords": [
+                "Project",
+                "Management",
+                "Team",
+                "Deadlines",
+                "Planning"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Psychologist",
+            "tabooWords": [
+                "Mind",
+                "Therapy",
+                "Counseling",
+                "Behavior",
+                "Emotions"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Public Relations Manager",
+            "tabooWords": [
+                "Public",
+                "Relations",
+                "Communication",
+                "Media",
+                "Branding"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Radiologist",
+            "tabooWords": [
+                "Radiology",
+                "X-ray",
+                "Diagnosis",
+                "Medical",
+                "Imaging"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Researcher",
+            "tabooWords": [
+                "Research",
+                "Study",
+                "Data",
+                "Experiment",
+                "Analysis"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Sales Manager",
+            "tabooWords": [
+                "Sales",
+                "Marketing",
+                "Team",
+                "Targets",
+                "Strategy"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Sales Representative",
+            "tabooWords": [
+                "Sales",
+                "Marketing",
+                "Customers",
+                "Pitch",
+                "Negotiation"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Scientist",
+            "tabooWords": [
+                "Research",
+                "Laboratory",
+                "Hypothesis",
+                "Experiment",
+                "Discovery"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Social Media Manager",
+            "tabooWords": [
+                "Social",
+                "Marketing",
+                "Content",
+                "Engagement",
+                "Platform"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Social Worker",
+            "tabooWords": [
+                "Welfare",
+                "Counseling",
+                "Community",
+                "Advocacy",
+                "Support"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Soldier",
+            "tabooWords": [
+                "Military",
+                "Army",
+                "Battlefield",
+                "Uniform",
+                "Courage"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Speech Therapist",
+            "tabooWords": [
+                "Speech",
+                "Communication",
+                "Language",
+                "Articulation",
+                "Phonetics"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Teacher",
+            "tabooWords": [
+                "Classroom",
+                "Education",
+                "Students",
+                "Lesson",
+                "Homework"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Translator",
+            "tabooWords": [
+                "Language",
+                "Interpret",
+                "Bilingual",
+                "Communication",
+                "Transcription"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Veterinarian",
+            "tabooWords": [
+                "Animals",
+                "Clinic",
+                "Pet",
+                "Veterinary",
+                "Diagnosis"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Writer",
+            "tabooWords": [
+                "Writing",
+                "Author",
+                "Novel",
+                "Pen",
+                "Literature"
+            ]
+        },
+        {
+            "category": "Professions",
+            "word": "Zoologist",
+            "tabooWords": [
+                "Animals",
+                "Wildlife",
+                "Species",
+                "Habitat",
+                "Conservation"
+            ]
+        }
+    ]
+}
