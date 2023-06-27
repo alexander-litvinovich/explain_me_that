@@ -18,9 +18,9 @@ let forceSwipeLeft, forceSwipeRight;
 
 const renderHeader = ({ settings, gameState, score, headerAction }) => {
   const timeIndicator = gameState.isFreePlay ? null : settings.gameMode ? (
-    <Indicator title="time left" value={secToTimeString(score.timeDisplay)} />
+    <Indicator time title="time left" value={secToTimeString(score.timeDisplay)} />
   ) : (
-    <Indicator title="time lapsed" value={secToTimeString(score.timeDisplay)} />
+    <Indicator time title="time lapsed" value={secToTimeString(score.timeDisplay)} />
   );
 
   const leftButton = gameState.isFreePlay ? (

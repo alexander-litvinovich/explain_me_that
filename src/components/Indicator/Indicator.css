@@ -3,6 +3,11 @@
     flex-direction: column;
 }
 
+.Indicator--time .Indicator-Label,
+.Indicator--time .Indicator-Value{
+    width: 70px;
+}
+
 .Indicator-Label{
     font-style: normal;
     line-height: 15px;
@@ -19,3 +24,4 @@
     text-align: center;
     letter-spacing: -0.03em;
 }
+
