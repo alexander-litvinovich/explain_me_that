@@ -20,8 +20,8 @@ const MenuContainer = () => {
   };
 
   let gameSubTitle = `${gameModeLabels[settings.gameMode]}, ${settings.gameMode
-      ? timeLimitLabels[settings.timeLimit]
-      : settings.cardSet + " cards"
+    ? timeLimitLabels[settings.timeLimit]
+    : settings.cardSet + " cards"
     }`;
 
   let statsSubTitle = !!lastRound

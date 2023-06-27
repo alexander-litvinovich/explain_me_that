@@ -106,7 +106,7 @@ function GameContainer({ isFreePlay }) {
     const roundStat = {
       ...settings,
       ...score,
-      time,
+      time: time - 1,
       timeDisplay: timeDisplayRef.current,
       timeStamp: Date.now(),
     };

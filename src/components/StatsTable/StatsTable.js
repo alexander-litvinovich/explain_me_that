@@ -28,7 +28,7 @@ const SlatsTableLine = ({
       <td>{`${right} hits / ${secToTimeString(time)}`}</td>
       <td className="number">{wrong}</td>
       <td className="number">{skipped}</td>
-      <td className="number">{efficiency}</td>
+      <td className="number">{efficiency} hits/min</td>
     </tr>
   );
 };
