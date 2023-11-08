@@ -1,0 +1,151 @@
+.InstallAppBanner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 0 8px 24px 8px;
+  gap: 12px;
+  z-index: 10;
+}
+
+.InstallAppBanner--dim {
+  top: 0;
+  padding-top: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.InstallAppBanner-wrapper {
+  min-width: 296px;
+  max-width: 360px;
+  width: auto;
+
+  gap: 8px;
+  background: var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  text-align: left;
+  letter-spacing: -0.3px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.InstallAppBanner-img {
+  font-size: 0;
+  height: 100%;
+  overflow: hidden;
+  min-width: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.InstallAppBanner-img img {
+  height: 100%;
+  width: auto;
+}
+
+.InstallAppBanner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.InstallAppBanner-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 16px 0 0;
+}
+
+.InstallAppBanner-header {
+  color: var(--white);
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.InstallAppBanner-description {
+  color: var(--white);
+  font-size: 10px;
+  line-height: 12px;
+
+}
+
+.InstallAppBanner-cta,
+.InstallAppBanner-altAction {
+  border: none;
+  text-align: center;
+}
+
+.InstallAppBanner-cta {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 14px 24px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.InstallAppBanner-altAction {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 14px 16px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  opacity: 0.5;
+}
+
+.InstallAppBanner-btnLabel {
+  transition: transform 0.2s ease-out;
+}
+
+.InstallAppBanner-cta:active .InstallAppBanner-btnLabel,
+.InstallAppBanner-altAction:active .InstallAppBanner-btnLabel {
+  transform: scale(1.2);
+}
+
+.InstallAppBanner-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: auto;
+}
+
+.InstallAppBanner-userAgent {
+
+  padding: 20px;
+}
+
+.InstallAppBanner-video {
+  width: auto;
+  height: 60vh;
+  position: relative;
+}
+
+.InstallAppBanner-videoClose {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.InstallAppBanner-video video {
+  width: auto;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px var(--black);
+}
+
+.InstallAppBanner-debug{
+  background: var(--black);
+  color: var(--white);
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./MenuLayout.css";
 import Indicator from "components/Indicator";
 import Button from "components/Button";
+import InstallAppBanner from "components/InstallAppBanner";
 
 const MenuLayout = ({ game, freePlay, statistics, settings, rules }) => {
   return (
@@ -18,6 +19,7 @@ const MenuLayout = ({ game, freePlay, statistics, settings, rules }) => {
         <Button title="Settings" color="red" {...settings} />
         <Button title="Rules" color="black" {...rules} />
       </nav>
+      <InstallAppBanner />
     </div>
   );
 };
